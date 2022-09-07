@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1443106228C8728300715560 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443106128C8728300715560 /* LoginViewController.swift */; };
 		1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04328C6D33A000BF2A3 /* AppDelegate.swift */; };
 		1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */; };
 		1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1443106128C8728300715560 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onedayticket-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479C04328C6D33A000BF2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				1479C04328C6D33A000BF2A3 /* AppDelegate.swift */,
+				1443106128C8728300715560 /* LoginViewController.swift */,
 				1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */,
 				1479C09F28C7492C000BF2A3 /* SplashViewController.swift */,
 				1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1443106228C8728300715560 /* LoginViewController.swift in Sources */,
 				1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */,
 				1479C04E28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,

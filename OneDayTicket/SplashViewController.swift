@@ -14,11 +14,11 @@ class SplashViewController: UIViewController {
         
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//            vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-//            vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-//            self.present(vc, animated: true, completion: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(vc, animated: true, completion: nil)
         }
     }
     
