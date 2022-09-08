@@ -59,8 +59,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_signin" translatesAutoresizingMaskIntoConstraints="NO" id="Z5B-cd-ujk">
-                                <rect key="frame" x="40" y="249" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z5B-cd-ujk">
+                                <rect key="frame" x="40" y="248" width="30" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="L3h-Xm-hAe"/>
                                     <constraint firstAttribute="width" constant="30" id="LFF-oQ-Qj4"/>
@@ -77,7 +77,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -98,7 +98,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -144,21 +144,14 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="copyright"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password_signin" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-sP-7sN">
-                                <rect key="frame" x="40" y="306" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-sP-7sN">
+                                <rect key="frame" x="40" y="305" width="30" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Pk8-Kr-EMb"/>
                                     <constraint firstAttribute="width" constant="30" id="wKA-Dh-ZaX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyD-lg-8AV">
-                                <rect key="frame" x="40" y="446" width="88" height="30"/>
-                                <state key="normal" title="free_register"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="free_register"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-2k-25k">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-2k-25k">
                                 <rect key="frame" x="258" y="446" width="116" height="30"/>
                                 <state key="normal" title="forget_password"/>
                                 <userDefinedRuntimeAttributes>
@@ -185,7 +178,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5l-tv-Agg" customClass="CheckBox" customModule="Chinastockanalysis" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5l-tv-Agg" customClass="CheckBox" customModule="onedayticket_ios" customModuleProvider="target">
                                 <rect key="frame" x="254.5" y="351" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="hcU-7M-gAr"/>
@@ -219,7 +212,6 @@
                             <constraint firstItem="qtZ-dp-5NX" firstAttribute="centerX" secondItem="dHb-jm-C4I" secondAttribute="centerX" id="7Au-Vp-u2l"/>
                             <constraint firstItem="Z5B-cd-ujk" firstAttribute="leading" secondItem="dHb-jm-C4I" secondAttribute="leading" constant="40" id="CcM-uH-VEh"/>
                             <constraint firstItem="n5l-tv-Agg" firstAttribute="top" secondItem="4bm-ue-fFo" secondAttribute="bottom" constant="5" id="DcH-Hj-Dhr"/>
-                            <constraint firstItem="H5G-2k-25k" firstAttribute="top" secondItem="VyD-lg-8AV" secondAttribute="top" id="E0o-gv-ubp"/>
                             <constraint firstItem="qtZ-dp-5NX" firstAttribute="top" secondItem="ePY-Zc-SNQ" secondAttribute="bottom" constant="5" id="Jor-af-SFm"/>
                             <constraint firstItem="rfz-xv-YWo" firstAttribute="trailing" secondItem="4bm-ue-fFo" secondAttribute="trailing" id="L4x-wt-9A3"/>
                             <constraint firstItem="GCe-CE-Eev" firstAttribute="centerX" secondItem="d42-eo-Q6R" secondAttribute="centerX" id="PAR-c2-PSO"/>
@@ -241,10 +233,8 @@
                             <constraint firstItem="dHb-jm-C4I" firstAttribute="trailing" secondItem="chp-zX-3Zf" secondAttribute="trailing" constant="40" id="lC0-Zr-a5F"/>
                             <constraint firstItem="hxW-Sj-csD" firstAttribute="top" secondItem="n5l-tv-Agg" secondAttribute="bottom" constant="5" id="oAu-0J-hSk"/>
                             <constraint firstItem="Z5B-cd-ujk" firstAttribute="top" secondItem="GCe-CE-Eev" secondAttribute="bottom" constant="40" id="rSJ-Uh-Z09"/>
-                            <constraint firstItem="VyD-lg-8AV" firstAttribute="top" secondItem="hxW-Sj-csD" secondAttribute="bottom" constant="10" id="reB-CA-Ofw"/>
                             <constraint firstItem="ePY-Zc-SNQ" firstAttribute="centerX" secondItem="dHb-jm-C4I" secondAttribute="centerX" id="sVM-Fk-SBV"/>
                             <constraint firstItem="hxW-Sj-csD" firstAttribute="leading" secondItem="dHb-jm-C4I" secondAttribute="leading" constant="30" id="whs-i9-sYZ"/>
-                            <constraint firstItem="VyD-lg-8AV" firstAttribute="leading" secondItem="b1t-sP-7sN" secondAttribute="leading" id="zKg-OJ-Wqs"/>
                             <constraint firstItem="dHb-jm-C4I" firstAttribute="trailing" secondItem="hxW-Sj-csD" secondAttribute="trailing" constant="30" id="znf-tu-hMm"/>
                         </constraints>
                     </view>
@@ -256,9 +246,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="email_signin" width="48" height="48"/>
         <image name="logo" width="1024" height="1024"/>
-        <image name="password_signin" width="48" height="48"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

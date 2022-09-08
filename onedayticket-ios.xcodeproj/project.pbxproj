@@ -16,6 +16,8 @@
 		1479C05028C6D33A000BF2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1479C04F28C6D33A000BF2A3 /* Assets.xcassets */; };
 		1479C05328C6D33A000BF2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1479C05128C6D33A000BF2A3 /* LaunchScreen.storyboard */; };
 		1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C09F28C7492C000BF2A3 /* SplashViewController.swift */; };
+		14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914EC728C9773400DBE6BC /* CheckBox.swift */; };
+		14914ECA28C977FD00DBE6BC /* Extension in Resources */ = {isa = PBXBuildFile; fileRef = 14914EC928C977FD00DBE6BC /* Extension */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		1479C05228C6D33A000BF2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1479C05428C6D33A000BF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1479C09F28C7492C000BF2A3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		14914EC728C9773400DBE6BC /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		14914EC928C977FD00DBE6BC /* Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extension; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		1479C04228C6D33A000BF2A3 /* OneDayTicket */ = {
 			isa = PBXGroup;
 			children = (
+				14914EC928C977FD00DBE6BC /* Extension */,
+				14914EC728C9773400DBE6BC /* CheckBox.swift */,
 				1479C04328C6D33A000BF2A3 /* AppDelegate.swift */,
 				1443106128C8728300715560 /* LoginViewController.swift */,
 				1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */,
@@ -136,6 +142,7 @@
 			files = (
 				1479C05328C6D33A000BF2A3 /* LaunchScreen.storyboard in Resources */,
 				1479C05028C6D33A000BF2A3 /* Assets.xcassets in Resources */,
+				14914ECA28C977FD00DBE6BC /* Extension in Resources */,
 				1479C04B28C6D33A000BF2A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +157,7 @@
 				1443106228C8728300715560 /* LoginViewController.swift in Sources */,
 				1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */,
 				1479C04E28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld in Sources */,
+				14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
 				1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */,
 				1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */,
