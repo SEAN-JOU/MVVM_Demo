@@ -9,11 +9,16 @@ import AVFoundation
 import UIKit
 
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
+    
+    @IBOutlet weak var backButton: UIButton!
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        backButton.addTarget(self, action: #selector(backTapped), for: .touchUpInside)
 
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
@@ -47,11 +52,15 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         }
 
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = view.layer.bounds
+        previewLayer.frame = CGRect(x: 0, y: 100, width: view.layer.bounds.width, height: view.layer.bounds.height-100)
         previewLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(previewLayer)
 
         captureSession.startRunning()
+    }
+    
+    @objc private func backTapped() {
+        dismiss(animated: true)
     }
 
     func failed() {

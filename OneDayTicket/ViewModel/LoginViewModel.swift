@@ -15,14 +15,25 @@ class LoginViewModel {
     var showError: (()->())?
     var showLoading: (()->())?
     var hideLoading: (()->())?
+    var vc:UIViewController?
     
-
-    
-//    func getData(){
-//        ApiClient.login(complete: <#T##(Bool, [Data]?) -> ()##(Bool, [Data]?) -> ()##(_ success: Bool, _ data: [Data]?) -> ()#>) { (success, data) in
-//           
-//        }
-//    }
+    func initViewModel(vc:UIViewController){
+        self.vc = vc
+    }
+    func login(memberID:String,password:String){
+        ApiClient.login(memberID: memberID, password: memberID, complete: { (success, data1) in
+            if success {
+                DispatchQueue.main.async {
+                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                    vc1.modalPresentationStyle = .fullScreen
+                    self.vc!.present(vc1, animated: true, completion: nil)
+                }
+            } else {
+                
+            }
+        }
+        )
+    }
 }
 
 struct DataListCellViewModel {
