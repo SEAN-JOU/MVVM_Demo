@@ -59,11 +59,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z5B-cd-ujk">
-                                <rect key="frame" x="40" y="248" width="30" height="31"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="Z5B-cd-ujk">
+                                <rect key="frame" x="40" y="249" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="L3h-Xm-hAe"/>
-                                    <constraint firstAttribute="width" constant="30" id="LFF-oQ-Qj4"/>
+                                    <constraint firstAttribute="height" constant="40" id="L3h-Xm-hAe"/>
+                                    <constraint firstAttribute="width" constant="40" id="LFF-oQ-Qj4"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="account" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chp-zX-3Zf">
@@ -77,13 +78,13 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="6"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="opaqueSeparatorColor"/>
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -98,13 +99,13 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="7"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="opaqueSeparatorColor"/>
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -144,14 +145,15 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="copyright"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-sP-7sN">
-                                <rect key="frame" x="40" y="305" width="30" height="31"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_vpn_key" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-sP-7sN">
+                                <rect key="frame" x="40" y="306" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Pk8-Kr-EMb"/>
-                                    <constraint firstAttribute="width" constant="30" id="wKA-Dh-ZaX"/>
+                                    <constraint firstAttribute="height" constant="40" id="Pk8-Kr-EMb"/>
+                                    <constraint firstAttribute="width" constant="40" id="wKA-Dh-ZaX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-2k-25k">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-2k-25k">
                                 <rect key="frame" x="258" y="446" width="116" height="30"/>
                                 <state key="normal" title="forget_password"/>
                                 <userDefinedRuntimeAttributes>
@@ -194,38 +196,29 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="auto_login"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1o-Uj-5qG">
-                                <rect key="frame" x="324" y="601" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="jHz-7A-ezd"/>
-                                    <constraint firstAttribute="height" constant="30" id="v0g-5v-W5E"/>
-                                </constraints>
-                                <state key="normal" title="Skip"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dHb-jm-C4I"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="D1o-Uj-5qG" firstAttribute="top" secondItem="4by-vU-YtW" secondAttribute="bottom" constant="15" id="3xt-SW-Cg2"/>
                             <constraint firstItem="dHb-jm-C4I" firstAttribute="trailing" secondItem="4bm-ue-fFo" secondAttribute="trailing" constant="40" id="4oF-OA-jmc"/>
                             <constraint firstItem="rfz-xv-YWo" firstAttribute="centerY" secondItem="n5l-tv-Agg" secondAttribute="centerY" id="54W-K5-23s"/>
                             <constraint firstItem="qtZ-dp-5NX" firstAttribute="centerX" secondItem="dHb-jm-C4I" secondAttribute="centerX" id="7Au-Vp-u2l"/>
+                            <constraint firstItem="H5G-2k-25k" firstAttribute="top" secondItem="hxW-Sj-csD" secondAttribute="bottom" constant="10" id="Awr-s7-cWK"/>
                             <constraint firstItem="Z5B-cd-ujk" firstAttribute="leading" secondItem="dHb-jm-C4I" secondAttribute="leading" constant="40" id="CcM-uH-VEh"/>
                             <constraint firstItem="n5l-tv-Agg" firstAttribute="top" secondItem="4bm-ue-fFo" secondAttribute="bottom" constant="5" id="DcH-Hj-Dhr"/>
                             <constraint firstItem="qtZ-dp-5NX" firstAttribute="top" secondItem="ePY-Zc-SNQ" secondAttribute="bottom" constant="5" id="Jor-af-SFm"/>
                             <constraint firstItem="rfz-xv-YWo" firstAttribute="trailing" secondItem="4bm-ue-fFo" secondAttribute="trailing" id="L4x-wt-9A3"/>
                             <constraint firstItem="GCe-CE-Eev" firstAttribute="centerX" secondItem="d42-eo-Q6R" secondAttribute="centerX" id="PAR-c2-PSO"/>
                             <constraint firstItem="4by-vU-YtW" firstAttribute="centerX" secondItem="dHb-jm-C4I" secondAttribute="centerX" id="PEc-ui-cms"/>
-                            <constraint firstItem="D1o-Uj-5qG" firstAttribute="trailing" secondItem="H5G-2k-25k" secondAttribute="trailing" id="QTn-CU-O9L"/>
                             <constraint firstItem="b1t-sP-7sN" firstAttribute="leading" secondItem="Z5B-cd-ujk" secondAttribute="leading" id="RGh-bu-7Oh"/>
                             <constraint firstItem="rfz-xv-YWo" firstAttribute="leading" secondItem="n5l-tv-Agg" secondAttribute="trailing" id="RjB-oo-XYR"/>
-                            <constraint firstItem="chp-zX-3Zf" firstAttribute="leading" secondItem="Z5B-cd-ujk" secondAttribute="trailing" constant="5" id="Smd-wd-paO"/>
+                            <constraint firstItem="chp-zX-3Zf" firstAttribute="leading" secondItem="Z5B-cd-ujk" secondAttribute="trailing" constant="-5" id="Smd-wd-paO"/>
                             <constraint firstItem="4bm-ue-fFo" firstAttribute="top" secondItem="chp-zX-3Zf" secondAttribute="bottom" constant="17" id="TWq-IJ-DsB"/>
                             <constraint firstItem="rfz-xv-YWo" firstAttribute="centerY" secondItem="n5l-tv-Agg" secondAttribute="centerY" id="WhN-7x-ZMD"/>
                             <constraint firstItem="dHb-jm-C4I" firstAttribute="bottom" secondItem="qtZ-dp-5NX" secondAttribute="bottom" constant="30" id="XUB-aT-cF1"/>
                             <constraint firstItem="b1t-sP-7sN" firstAttribute="top" secondItem="4bm-ue-fFo" secondAttribute="top" id="Xgl-xc-Efy"/>
                             <constraint firstItem="H5G-2k-25k" firstAttribute="trailing" secondItem="4bm-ue-fFo" secondAttribute="trailing" id="dP7-sR-tTl"/>
-                            <constraint firstItem="4bm-ue-fFo" firstAttribute="leading" secondItem="b1t-sP-7sN" secondAttribute="trailing" constant="5" id="ePB-YZ-PZd"/>
+                            <constraint firstItem="4bm-ue-fFo" firstAttribute="leading" secondItem="b1t-sP-7sN" secondAttribute="trailing" constant="-5" id="ePB-YZ-PZd"/>
                             <constraint firstItem="chp-zX-3Zf" firstAttribute="top" secondItem="Z5B-cd-ujk" secondAttribute="top" id="ejP-KB-ugO"/>
                             <constraint firstItem="4by-vU-YtW" firstAttribute="top" secondItem="hxW-Sj-csD" secondAttribute="bottom" constant="50" id="fBR-lc-F3d"/>
                             <constraint firstItem="hxW-Sj-csD" firstAttribute="centerX" secondItem="dHb-jm-C4I" secondAttribute="centerX" id="fHj-cz-F2n"/>
@@ -246,12 +239,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_person" width="128" height="128"/>
+        <image name="ic_vpn_key" width="128" height="128"/>
         <image name="logo" width="1024" height="1024"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

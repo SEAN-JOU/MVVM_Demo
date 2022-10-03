@@ -2,9 +2,10 @@
 # platform :ios, '9.0'
 
 target 'onedayticket-ios' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for onedayticket-ios
+  pod 'Kingfisher', '~> 7.0'
+  pod 'NYAlertViewController'
+  pod 'SVProgressHUD'
+  pod 'Alamofire'
 
 end

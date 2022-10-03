@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143ED23928EA6C99008C1C65 /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23328EA6C99008C1C65 /* UIAlertController+Ext.swift */; };
+		143ED23A28EA6C99008C1C65 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23428EA6C99008C1C65 /* StringExtension.swift */; };
+		143ED23B28EA6C99008C1C65 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23528EA6C99008C1C65 /* UIViewExtension.swift */; };
+		143ED23C28EA6C99008C1C65 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23628EA6C99008C1C65 /* Double+Ext.swift */; };
+		143ED23D28EA6C99008C1C65 /* UIDatePicker+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23728EA6C99008C1C65 /* UIDatePicker+Ext.swift */; };
+		143ED23E28EA6C99008C1C65 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23828EA6C99008C1C65 /* UIColor+Ext.swift */; };
+		143ED24728EA6D81008C1C65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143ED24128EA6D81008C1C65 /* Localizable.strings */; };
+		143ED24828EA6D81008C1C65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143ED24428EA6D81008C1C65 /* Localizable.strings */; };
+		143ED24928EA6D81008C1C65 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24628EA6D81008C1C65 /* Strings.swift */; };
+		143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24A28EA7BC4008C1C65 /* ApiClient.swift */; };
+		143ED24D28EA85F6008C1C65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */; };
 		1443106228C8728300715560 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443106128C8728300715560 /* LoginViewController.swift */; };
 		1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04328C6D33A000BF2A3 /* AppDelegate.swift */; };
 		1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */; };
@@ -17,10 +28,21 @@
 		1479C05328C6D33A000BF2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1479C05128C6D33A000BF2A3 /* LaunchScreen.storyboard */; };
 		1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C09F28C7492C000BF2A3 /* SplashViewController.swift */; };
 		14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914EC728C9773400DBE6BC /* CheckBox.swift */; };
-		14914ECA28C977FD00DBE6BC /* Extension in Resources */ = {isa = PBXBuildFile; fileRef = 14914EC928C977FD00DBE6BC /* Extension */; };
+		886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143ED23328EA6C99008C1C65 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
+		143ED23428EA6C99008C1C65 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		143ED23528EA6C99008C1C65 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		143ED23628EA6C99008C1C65 /* Double+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		143ED23728EA6C99008C1C65 /* UIDatePicker+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Ext.swift"; sourceTree = "<group>"; };
+		143ED23828EA6C99008C1C65 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		143ED24228EA6D81008C1C65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		143ED24528EA6D81008C1C65 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = Localizable.strings; sourceTree = "<group>"; };
+		143ED24628EA6D81008C1C65 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		143ED24A28EA7BC4008C1C65 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1443106128C8728300715560 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onedayticket-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479C04328C6D33A000BF2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +55,9 @@
 		1479C05428C6D33A000BF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1479C09F28C7492C000BF2A3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		14914EC728C9773400DBE6BC /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		14914EC928C977FD00DBE6BC /* Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extension; sourceTree = "<group>"; };
+		47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.release.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.release.xcconfig"; sourceTree = "<group>"; };
+		539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.debug.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onedayticket_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +65,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143ED22E28EA6C2E008C1C65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		143ED22F28EA6C53008C1C65 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				143ED24A28EA7BC4008C1C65 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		143ED23028EA6C61008C1C65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1443106128C8728300715560 /* LoginViewController.swift */,
+				1479C09F28C7492C000BF2A3 /* SplashViewController.swift */,
+				1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		143ED23128EA6C6B008C1C65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		143ED23228EA6C8B008C1C65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				143ED23628EA6C99008C1C65 /* Double+Ext.swift */,
+				143ED23428EA6C99008C1C65 /* StringExtension.swift */,
+				143ED23328EA6C99008C1C65 /* UIAlertController+Ext.swift */,
+				143ED23828EA6C99008C1C65 /* UIColor+Ext.swift */,
+				143ED23728EA6C99008C1C65 /* UIDatePicker+Ext.swift */,
+				143ED23528EA6C99008C1C65 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		143ED23F28EA6D43008C1C65 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				143ED24628EA6D81008C1C65 /* Strings.swift */,
+				143ED24028EA6D81008C1C65 /* en.lproj */,
+				143ED24328EA6D81008C1C65 /* zh-Hant.lproj */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		143ED24028EA6D81008C1C65 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				143ED24128EA6D81008C1C65 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		143ED24328EA6D81008C1C65 /* zh-Hant.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				143ED24428EA6D81008C1C65 /* Localizable.strings */,
+			);
+			path = "zh-Hant.lproj";
+			sourceTree = "<group>";
+		};
 		1479C03728C6D33A000BF2A3 = {
 			isa = PBXGroup;
 			children = (
 				1479C04228C6D33A000BF2A3 /* OneDayTicket */,
 				1479C04128C6D33A000BF2A3 /* Products */,
+				4498D2F0E847CD78D1FC69FF /* Pods */,
+				3EB2F15BD9F7B3BCECA28DC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,13 +165,15 @@
 		1479C04228C6D33A000BF2A3 /* OneDayTicket */ = {
 			isa = PBXGroup;
 			children = (
-				14914EC928C977FD00DBE6BC /* Extension */,
+				143ED23228EA6C8B008C1C65 /* Extensions */,
+				143ED23128EA6C6B008C1C65 /* Model */,
+				143ED23028EA6C61008C1C65 /* View */,
+				143ED22F28EA6C53008C1C65 /* Network */,
+				143ED22E28EA6C2E008C1C65 /* ViewModel */,
+				143ED23F28EA6D43008C1C65 /* Language */,
 				14914EC728C9773400DBE6BC /* CheckBox.swift */,
 				1479C04328C6D33A000BF2A3 /* AppDelegate.swift */,
-				1443106128C8728300715560 /* LoginViewController.swift */,
 				1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */,
-				1479C09F28C7492C000BF2A3 /* SplashViewController.swift */,
-				1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */,
 				1479C04928C6D33A000BF2A3 /* Main.storyboard */,
 				1479C04F28C6D33A000BF2A3 /* Assets.xcassets */,
 				1479C05128C6D33A000BF2A3 /* LaunchScreen.storyboard */,
@@ -82,6 +183,24 @@
 			path = OneDayTicket;
 			sourceTree = "<group>";
 		};
+		3EB2F15BD9F7B3BCECA28DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4498D2F0E847CD78D1FC69FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */,
+				47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1479C05728C6D33A000BF2A3 /* Build configuration list for PBXNativeTarget "onedayticket-ios" */;
 			buildPhases = (
+				92BA6CACFE92F51C94B36931 /* [CP] Check Pods Manifest.lock */,
 				1479C03C28C6D33A000BF2A3 /* Sources */,
 				1479C03D28C6D33A000BF2A3 /* Frameworks */,
 				1479C03E28C6D33A000BF2A3 /* Resources */,
+				8A6C0C8216D722AED0183A70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 1479C03728C6D33A000BF2A3;
 			productRefGroup = 1479C04128C6D33A000BF2A3 /* Products */;
@@ -140,33 +262,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143ED24828EA6D81008C1C65 /* Localizable.strings in Resources */,
 				1479C05328C6D33A000BF2A3 /* LaunchScreen.storyboard in Resources */,
+				143ED24728EA6D81008C1C65 /* Localizable.strings in Resources */,
 				1479C05028C6D33A000BF2A3 /* Assets.xcassets in Resources */,
-				14914ECA28C977FD00DBE6BC /* Extension in Resources */,
 				1479C04B28C6D33A000BF2A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A6C0C8216D722AED0183A70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BA6CACFE92F51C94B36931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-onedayticket-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1479C03C28C6D33A000BF2A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143ED23B28EA6C99008C1C65 /* UIViewExtension.swift in Sources */,
 				1443106228C8728300715560 /* LoginViewController.swift in Sources */,
 				1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */,
 				1479C04E28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld in Sources */,
+				143ED24D28EA85F6008C1C65 /* LoginViewModel.swift in Sources */,
+				143ED23C28EA6C99008C1C65 /* Double+Ext.swift in Sources */,
 				14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */,
+				143ED24928EA6D81008C1C65 /* Strings.swift in Sources */,
+				143ED23E28EA6C99008C1C65 /* UIColor+Ext.swift in Sources */,
+				143ED23928EA6C99008C1C65 /* UIAlertController+Ext.swift in Sources */,
+				143ED23A28EA6C99008C1C65 /* StringExtension.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
 				1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */,
 				1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */,
+				143ED23D28EA6C99008C1C65 /* UIDatePicker+Ext.swift in Sources */,
+				143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		143ED24128EA6D81008C1C65 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143ED24228EA6D81008C1C65 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		143ED24428EA6D81008C1C65 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143ED24528EA6D81008C1C65 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1479C04928C6D33A000BF2A3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -302,6 +492,7 @@
 		};
 		1479C05828C6D33A000BF2A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +501,7 @@
 				DEVELOPMENT_TEAM = 3WXM8F9ZYK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for scanning QR code.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,6 +522,7 @@
 		};
 		1479C05928C6D33A000BF2A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +531,7 @@
 				DEVELOPMENT_TEAM = 3WXM8F9ZYK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for scanning QR code.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
