@@ -29,6 +29,7 @@
 		1479C05328C6D33A000BF2A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1479C05128C6D33A000BF2A3 /* LaunchScreen.storyboard */; };
 		1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C09F28C7492C000BF2A3 /* SplashViewController.swift */; };
 		14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914EC728C9773400DBE6BC /* CheckBox.swift */; };
+		14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */; };
 		14B302C628EACEEC00C757C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B302C528EACEEC00C757C0 /* MainViewController.swift */; };
 		14EB294428EAB04700BA6375 /* LoginDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294328EAB04700BA6375 /* LoginDataType.swift */; };
 		14EB294D28EAB8A200BA6375 /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294628EAB8A200BA6375 /* JsonUtil.swift */; };
@@ -66,6 +67,7 @@
 		1479C05428C6D33A000BF2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1479C09F28C7492C000BF2A3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		14914EC728C9773400DBE6BC /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDataType.swift; sourceTree = "<group>"; };
 		14B302C528EACEEC00C757C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14EB294328EAB04700BA6375 /* LoginDataType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataType.swift; sourceTree = "<group>"; };
 		14EB294628EAB8A200BA6375 /* JsonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				14EB294328EAB04700BA6375 /* LoginDataType.swift */,
+				14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */,
 				14EB295128EAB8A200BA6375 /* LTFlowLayout.swift in Sources */,
 				143ED23D28EA6C99008C1C65 /* UIDatePicker+Ext.swift in Sources */,
+				14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */,
 				14EB295228EAB8A200BA6375 /* ExampleUtil.swift in Sources */,
 				143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */,
 			);
@@ -545,7 +549,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
@@ -578,7 +582,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;

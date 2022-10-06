@@ -27,7 +27,6 @@ public struct ApiClient {
             in guard let data = data,let dataString = String(data: data, encoding: .utf8),
                      let response = response as? HTTPURLResponse,
                      error == nil else {
-                       
                          return
                      }
             let decoder = JSONDecoder()

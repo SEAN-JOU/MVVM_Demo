@@ -100,7 +100,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
 
     func found(code: String) {
-        print(code)
+        DispatchQueue.main.async {
+            self.view.showToast(text: code)
+        }
     }
 
     override var prefersStatusBarHidden: Bool {
