@@ -15,7 +15,7 @@ var API_URL:String = "https://api-t.oride.jwiseinc.com"
 
 public struct ApiClient {
     
-    static func login( memberID:String,password:String,complete: @escaping (_ success: Bool, _ data1: Data? )->() ){
+    static func login( memberID:String,password:String,complete: @escaping (_ data: Data? )->() ){
         let url = URL(string: API_URL + "/merchant/login.php")!
         var request = URLRequest(url: url)
         request.timeoutInterval = 2
@@ -29,11 +29,7 @@ public struct ApiClient {
                      error == nil else {
                          return
                      }
-            let decoder = JSONDecoder()
-            Log.d(title: "aaaaaaaa", message: dataString)
-            if let loginData = try? decoder.decode(LoginDataType.self, from: data) {
-                complete(true, data)
-            }
+            complete(data)
         }
         task.resume()
     }

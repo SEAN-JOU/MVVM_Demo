@@ -553,7 +553,7 @@
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "一日票";
+				INFOPLIST_KEY_CFBundleDisplayName = "Oride套票管理平台";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for scanning QR code.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -586,7 +586,7 @@
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "一日票";
+				INFOPLIST_KEY_CFBundleDisplayName = "Oride套票管理平台";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access your camera for scanning QR code.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

@@ -12,7 +12,6 @@ class SplashViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController

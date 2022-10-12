@@ -52,10 +52,17 @@ public struct Strings {}
 
 // MARK: - General
 extension Strings {
-    public static let username = NSLocalizedString("username", comment: "")
-    public static let password = NSLocalizedString("password", comment: "")
+    public static let login_title = NSLocalizedString("login_title", comment: "")
+    public static let login = NSLocalizedString("login", comment: "")
+    public static let forget_password = NSLocalizedString("forget_password", comment: "")
+    public static let remember_password = NSLocalizedString("remember_password", comment: "")
     public static let ok = NSLocalizedString("ok", comment: "")
     public static let cancel = NSLocalizedString("cancel", comment: "")
+    
+    
+    
+    public static let username = NSLocalizedString("username", comment: "")
+    public static let password = NSLocalizedString("password", comment: "")
     public static let value_filter = NSLocalizedString("value_filter", comment: "")
     public static let value_info = NSLocalizedString("value_info", comment: "")
     public static let distribution = NSLocalizedString("distribution", comment: "")
@@ -64,18 +71,16 @@ extension Strings {
     public static let connect = NSLocalizedString("connect", comment: "")
 
     public static let app_name = NSLocalizedString("app_name", comment: "")
-
     public static let nft = NSLocalizedString("nft", comment: "")
     
     public static let waiting = NSLocalizedString("waiting", comment: "")
     public static let confirm_password = NSLocalizedString("confirm_password", comment: "")
     public static let register = NSLocalizedString("register", comment: "")
     public static let email = NSLocalizedString("email", comment: "")
-    public static let login = NSLocalizedString("login", comment: "")
+    
     public static let logout = NSLocalizedString("logout", comment: "")
     public static let slogan = NSLocalizedString("slogan", comment: "")
     public static let agree_privacy_policy = NSLocalizedString("agree_privacy_policy", comment: "")
-    public static let auto_login = NSLocalizedString("auto_login", comment: "")
     public static let no_internet = NSLocalizedString("no_internet", comment: "")
 
     
@@ -84,7 +89,6 @@ extension Strings {
     public static let agree = NSLocalizedString("agree", comment: "")
     public static let agree_detail = NSLocalizedString("agree_detail", comment: "")
     public static let free_register = NSLocalizedString("free_register", comment: "")
-    public static let forget_password = NSLocalizedString("forget_password", comment: "")
     public static let modify_password = NSLocalizedString("modify_password", comment: "")
     public static let no_responsibility = NSLocalizedString("no_responsibility", comment: "")
     public static let set_widget = NSLocalizedString("set_widget", comment: "")
