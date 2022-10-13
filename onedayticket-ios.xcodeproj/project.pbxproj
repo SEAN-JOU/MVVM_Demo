@@ -19,6 +19,12 @@
 		143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24A28EA7BC4008C1C65 /* ApiClient.swift */; };
 		143ED24D28EA85F6008C1C65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */; };
 		1443106228C8728300715560 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443106128C8728300715560 /* LoginViewController.swift */; };
+		145084A428F79CF2004EF237 /* PackageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A328F79CF2004EF237 /* PackageInfoViewController.swift */; };
+		145084A628F79D76004EF237 /* WriteOffRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A528F79D76004EF237 /* WriteOffRecordViewController.swift */; };
+		145084A828F7A13C004EF237 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A728F7A13C004EF237 /* UIImage+Ex.swift */; };
+		145084AA28F7AF7B004EF237 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A928F7AF7B004EF237 /* LoginDelegate.swift */; };
+		145084AC28F7EB5B004EF237 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084AB28F7EB5B004EF237 /* CustomTabBar.swift */; };
+		145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145684E428F6B4C200A9D1D4 /* ForgetPasswordViewController.swift */; };
 		146DEA2D28EA9507005F16A5 /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146DEA2C28EA9507005F16A5 /* Dictionary+Ex.swift */; };
 		1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04328C6D33A000BF2A3 /* AppDelegate.swift */; };
 		1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */; };
@@ -55,6 +61,12 @@
 		143ED24A28EA7BC4008C1C65 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1443106128C8728300715560 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		145084A328F79CF2004EF237 /* PackageInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfoViewController.swift; sourceTree = "<group>"; };
+		145084A528F79D76004EF237 /* WriteOffRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteOffRecordViewController.swift; sourceTree = "<group>"; };
+		145084A728F7A13C004EF237 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		145084A928F7AF7B004EF237 /* LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
+		145084AB28F7EB5B004EF237 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		145684E428F6B4C200A9D1D4 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		146DEA2C28EA9507005F16A5 /* Dictionary+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
 		1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onedayticket-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479C04328C6D33A000BF2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */,
+				145084A928F7AF7B004EF237 /* LoginDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -113,10 +126,13 @@
 		143ED23028EA6C61008C1C65 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				145684E428F6B4C200A9D1D4 /* ForgetPasswordViewController.swift */,
 				1443106128C8728300715560 /* LoginViewController.swift */,
 				1479C09F28C7492C000BF2A3 /* SplashViewController.swift */,
 				1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */,
 				14B302C528EACEEC00C757C0 /* MainViewController.swift */,
+				145084A328F79CF2004EF237 /* PackageInfoViewController.swift */,
+				145084A528F79D76004EF237 /* WriteOffRecordViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +156,7 @@
 				143ED23728EA6C99008C1C65 /* UIDatePicker+Ext.swift */,
 				143ED23528EA6C99008C1C65 /* UIViewExtension.swift */,
 				146DEA2C28EA9507005F16A5 /* Dictionary+Ex.swift */,
+				145084A728F7A13C004EF237 /* UIImage+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 				143ED22E28EA6C2E008C1C65 /* ViewModel */,
 				143ED23F28EA6D43008C1C65 /* Language */,
 				14914EC728C9773400DBE6BC /* CheckBox.swift */,
+				145084AB28F7EB5B004EF237 /* CustomTabBar.swift */,
 				1479C04328C6D33A000BF2A3 /* AppDelegate.swift */,
 				1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */,
 				1479C04928C6D33A000BF2A3 /* Main.storyboard */,
@@ -361,6 +379,7 @@
 			files = (
 				143ED23B28EA6C99008C1C65 /* UIViewExtension.swift in Sources */,
 				14B302C628EACEEC00C757C0 /* MainViewController.swift in Sources */,
+				145084AA28F7AF7B004EF237 /* LoginDelegate.swift in Sources */,
 				1443106228C8728300715560 /* LoginViewController.swift in Sources */,
 				1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */,
 				1479C04E28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld in Sources */,
@@ -368,6 +387,7 @@
 				143ED23C28EA6C99008C1C65 /* Double+Ext.swift in Sources */,
 				14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */,
 				14EB295028EAB8A200BA6375 /* ClosureSleeve.swift in Sources */,
+				145084A628F79D76004EF237 /* WriteOffRecordViewController.swift in Sources */,
 				14EB294428EAB04700BA6375 /* LoginDataType.swift in Sources */,
 				14EB294F28EAB8A200BA6375 /* Log.swift in Sources */,
 				143ED24928EA6D81008C1C65 /* Strings.swift in Sources */,
@@ -377,13 +397,17 @@
 				14EB294E28EAB8A200BA6375 /* UserDefault.swift in Sources */,
 				146DEA2D28EA9507005F16A5 /* Dictionary+Ex.swift in Sources */,
 				14EB294D28EAB8A200BA6375 /* JsonUtil.swift in Sources */,
+				145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
 				14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */,
 				1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */,
 				1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */,
+				145084AC28F7EB5B004EF237 /* CustomTabBar.swift in Sources */,
+				145084A428F79CF2004EF237 /* PackageInfoViewController.swift in Sources */,
 				14EB295128EAB8A200BA6375 /* LTFlowLayout.swift in Sources */,
 				143ED23D28EA6C99008C1C65 /* UIDatePicker+Ext.swift in Sources */,
 				14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */,
+				145084A828F7A13C004EF237 /* UIImage+Ex.swift in Sources */,
 				14EB295228EAB8A200BA6375 /* ExampleUtil.swift in Sources */,
 				143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */,
 			);
@@ -549,7 +573,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
@@ -558,7 +582,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -582,7 +606,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
@@ -591,7 +615,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

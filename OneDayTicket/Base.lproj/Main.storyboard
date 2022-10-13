@@ -81,7 +81,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-104" y="692"/>
+            <point key="canvasLocation" x="700" y="773"/>
+        </scene>
+        <!--Forget Password View Controller-->
+        <scene sceneID="d2K-aA-yrE">
+            <objects>
+                <viewController storyboardIdentifier="ForgetPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dyq-aL-3PP" customClass="ForgetPasswordViewController" customModule="onedayticket_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WxF-SH-sF0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8OX-a4-HXS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulo-xc-hTq">
+                                        <rect key="frame" x="5" y="45" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2Vr-Ib-bi3"/>
+                                            <constraint firstAttribute="width" constant="50" id="Fp6-8l-ATn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="arrowshape.turn.up.backward.fill" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ulo-xc-hTq" firstAttribute="leading" secondItem="8OX-a4-HXS" secondAttribute="leading" constant="5" id="B7s-Wo-nKA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ulo-xc-hTq" secondAttribute="bottom" constant="5" id="Ek5-Gz-KT3"/>
+                                    <constraint firstAttribute="height" constant="100" id="mEd-lr-TT0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xy6-pQ-KnX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8OX-a4-HXS" firstAttribute="leading" secondItem="Xy6-pQ-KnX" secondAttribute="leading" id="8mc-5i-qiu"/>
+                            <constraint firstItem="Xy6-pQ-KnX" firstAttribute="top" secondItem="8OX-a4-HXS" secondAttribute="top" constant="44" id="FV8-lV-r69"/>
+                            <constraint firstItem="Xy6-pQ-KnX" firstAttribute="trailing" secondItem="8OX-a4-HXS" secondAttribute="trailing" id="i10-Fm-riA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Ulo-xc-hTq" id="bWj-B3-P2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upc-22-bmb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="747"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="G4b-rM-mmC">
@@ -149,7 +196,7 @@
                                     <constraint firstAttribute="height" constant="50" id="aRB-9W-8d4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="tintColor" red="0.0035760554019361734" green="0.55819642543792725" blue="0.99185842275619507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0039215686274509803" green="0.55686274509803924" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -189,8 +236,11 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-2k-25k">
-                                <rect key="frame" x="149" y="548" width="116" height="30"/>
-                                <state key="normal" title="forget_password"/>
+                                <rect key="frame" x="142.5" y="548" width="129" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="forget_password">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="forget_password"/>
                                 </userDefinedRuntimeAttributes>
@@ -223,7 +273,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <color key="textColor" red="0.0" green="0.37590125203132629" blue="0.7427029013633728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.37647058823529411" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="login_title"/>
@@ -267,6 +317,7 @@
                         <outlet property="loginButton" destination="hxW-Sj-csD" id="Lk5-q2-cPc"/>
                         <outlet property="memberIDTextField" destination="chp-zX-3Zf" id="jPo-jz-wIx"/>
                         <outlet property="passwordTextField" destination="4bm-ue-fFo" id="y1K-kt-VUf"/>
+                        <outlet property="rememberCheckBox" destination="n5l-tv-Agg" id="nqW-ve-nmn"/>
                         <outlet property="versionLabel" destination="ePY-Zc-SNQ" id="kky-gQ-3ff"/>
                     </connections>
                 </viewController>
@@ -288,64 +339,51 @@
                             <barButtonItem title="Item" landscapeImage="ic_notifications" id="UVA-X4-B9V"/>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <tabBar key="tabBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rGr-gJ-1XH" customClass="CustomTabBar" customModule="onedayticket_ios" customModuleProvider="target">
+                    <tabBar key="tabBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rGr-gJ-1XH" customClass="CustomTabBar" customModule="onedayticket_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <tabBarAppearance key="standardAppearance" backgroundEffect="regular" stackedItemPositioning="fill">
-                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <tabBarItemAppearance key="stackedLayoutAppearance">
                                 <tabBarItemStateAppearance key="normal">
                                     <textAttributes key="titleTextAttributes">
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </textAttributes>
-                                    <color key="iconColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </tabBarItemStateAppearance>
-                                <tabBarItemStateAppearance key="selected">
-                                    <textAttributes key="titleTextAttributes">
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
-                                        <color key="textShadowColor" systemColor="systemRedColor"/>
-                                    </textAttributes>
-                                    <color key="iconColor" systemColor="systemRedColor"/>
+                                    <color key="iconColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <textAttributes key="badgeTextAttributes">
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </textAttributes>
                                 </tabBarItemStateAppearance>
-                                <tabBarItemStateAppearance key="disabled">
-                                    <textAttributes key="titleTextAttributes">
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </textAttributes>
-                                    <color key="iconColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </tabBarItemStateAppearance>
-                                <tabBarItemStateAppearance key="focused">
-                                    <textAttributes key="titleTextAttributes">
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </textAttributes>
-                                    <color key="iconColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </tabBarItemStateAppearance>
+                                <tabBarItemStateAppearance key="selected"/>
+                                <tabBarItemStateAppearance key="disabled"/>
+                                <tabBarItemStateAppearance key="focused"/>
                             </tabBarItemAppearance>
-                            <color key="selectionIndicatorTintColor" systemColor="systemRedColor"/>
+                            <color key="selectionIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tabBarAppearance>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="height">
-                                <real key="value" value="90"/>
+                                <real key="value" value="100"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="6zs-Yy-Jts" kind="relationship" relationship="viewControllers" id="E7z-bL-77N"/>
                         <segue destination="qzv-Dm-8zy" kind="relationship" relationship="viewControllers" id="4i0-iL-31c"/>
+                        <segue destination="6zs-Yy-Jts" kind="relationship" relationship="viewControllers" id="E7z-bL-77N"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3KU-iv-CQD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,76 +412,112 @@
         <!--international-->
         <scene sceneID="SuQ-KV-gdq">
             <objects>
-                <viewController id="6zs-Yy-Jts" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WriteOffRecordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6zs-Yy-Jts" customClass="WriteOffRecordViewController" customModule="onedayticket_ios" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BB9-vg-jce">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg8-yG-hnL">
+                                <rect key="frame" x="324" y="723" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Yhy-xi-g6D"/>
+                                    <constraint firstAttribute="height" constant="60" id="wpB-Sl-QoP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="qrcode"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="99E-Zj-ZD1"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="99E-Zj-ZD1" firstAttribute="trailing" secondItem="lg8-yG-hnL" secondAttribute="trailing" constant="30" id="130-aA-0aK"/>
+                            <constraint firstItem="99E-Zj-ZD1" firstAttribute="bottom" secondItem="lg8-yG-hnL" secondAttribute="bottom" constant="30" id="jW6-Y8-SNu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="international" id="XRT-lM-ppo">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="international"/>
-                        </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="qrcodeBtn" destination="lg8-yG-hnL" id="HH8-x6-edR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQV-nA-IgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2707" y="35"/>
+            <point key="canvasLocation" x="2397" y="-34"/>
         </scene>
         <!--international-->
         <scene sceneID="qsx-8q-fK1">
             <objects>
-                <viewController id="qzv-Dm-8zy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PackageInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qzv-Dm-8zy" customClass="PackageInfoViewController" customModule="onedayticket_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkR-hF-nbb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P1-cl-6VW">
-                                <rect key="frame" x="329" y="728" width="65" height="65"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P1-cl-6VW">
+                                <rect key="frame" x="324" y="723" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="GVw-tW-NzY"/>
-                                    <constraint firstAttribute="height" constant="65" id="UWD-ZM-7mi"/>
+                                    <constraint firstAttribute="width" constant="60" id="GVw-tW-NzY"/>
+                                    <constraint firstAttribute="height" constant="60" id="UWD-ZM-7mi"/>
                                 </constraints>
-                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <state key="normal" image="ic_action_add_circle"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="qrcode"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="22J-X9-9Ju"/>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="22J-X9-9Ju" firstAttribute="trailing" secondItem="1P1-cl-6VW" secondAttribute="trailing" constant="20" id="uX0-zl-UoL"/>
-                            <constraint firstItem="22J-X9-9Ju" firstAttribute="bottom" secondItem="1P1-cl-6VW" secondAttribute="bottom" constant="20" id="vz7-C8-8qK"/>
+                            <constraint firstItem="22J-X9-9Ju" firstAttribute="trailing" secondItem="1P1-cl-6VW" secondAttribute="trailing" constant="30" id="uX0-zl-UoL"/>
+                            <constraint firstItem="22J-X9-9Ju" firstAttribute="bottom" secondItem="1P1-cl-6VW" secondAttribute="bottom" constant="30" id="vz7-C8-8qK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="international" id="YRk-qL-TJD">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="international"/>
-                        </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="qrcodeBtn" destination="1P1-cl-6VW" id="s3Q-S8-iae"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhT-CW-uwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="774"/>
+            <point key="canvasLocation" x="2429" y="-733"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
         <image name="fb_icon" width="48" height="48"/>
-        <image name="ic_action_add_circle" width="96" height="96"/>
         <image name="ic_notifications" width="48" height="48"/>
         <image name="ic_person" width="128" height="128"/>
         <image name="ic_vpn_key" width="128" height="128"/>
         <image name="logo_name" width="800" height="400"/>
+        <image name="qrcode" width="512" height="512"/>
         <image name="search_icon" width="61" height="61"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
