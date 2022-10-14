@@ -9,6 +9,7 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var rememberCheckBox: CheckBox!
+    @IBOutlet weak var forgetpasswordBtn: UIButton!
     
     var loginViewModel = LoginViewModel()
     
@@ -37,6 +38,11 @@ class LoginViewController: UIViewController{
                 self.passwordTextField.text! = ""
             }
         }
+        forgetpasswordBtn.setOnClickListener {
+            let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
+            vc1.modalPresentationStyle = .fullScreen
+            self.present(vc1, animated: true, completion: nil)
+        }
     }
     
     @objc private func loginTapped() {
@@ -62,9 +68,11 @@ extension LoginViewController:UITextFieldDelegate {
 }
 
 extension LoginViewController:LoginDelegate {
-    func callback(loginData: LoginDataType) {
+    func loginCallBack(loginData: LoginDataType) {
             if(loginData.sysCode >= 0){
                 DispatchQueue.main.async {
+                    Log.d(title: "aaa_session", message: loginData.data.session_id)
+                    UserDefault.setValue(key: "session_id", value: loginData.data.session_id)
                     let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
                     vc1.modalPresentationStyle = .fullScreen
                     self.present(vc1, animated: true, completion: nil)

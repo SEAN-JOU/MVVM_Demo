@@ -1,4 +1,13 @@
 //
+//  MotifyPasswordViewController.swift
+//  onedayticket-ios
+//
+//  Created by Sean on 2022/10/14.
+//
+
+import Foundation
+
+//
 //  ForgetPasswordViewController.swift
 //  Chinastockanalysis
 //
@@ -8,7 +17,7 @@
 
 import UIKit
 
-class ForgetPasswordViewController: UIViewController {
+class MotifyPasswordViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
     
@@ -21,3 +30,6 @@ class ForgetPasswordViewController: UIViewController {
     }
     
 }
+
+
+

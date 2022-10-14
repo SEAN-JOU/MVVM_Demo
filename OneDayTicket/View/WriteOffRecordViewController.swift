@@ -12,9 +12,7 @@ class WriteOffRecordViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        Log.d(title: "aaaaa", message: "WriteOffRecordViewController")
-        
+                
         qrcodeBtn.setOnClickListener {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "ScannerViewController") as! ScannerViewController

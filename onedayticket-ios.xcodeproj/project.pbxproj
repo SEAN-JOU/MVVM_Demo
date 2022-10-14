@@ -25,6 +25,10 @@
 		145084AA28F7AF7B004EF237 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A928F7AF7B004EF237 /* LoginDelegate.swift */; };
 		145084AC28F7EB5B004EF237 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084AB28F7EB5B004EF237 /* CustomTabBar.swift */; };
 		145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145684E428F6B4C200A9D1D4 /* ForgetPasswordViewController.swift */; };
+		1467E33C28F8F18400E1BA17 /* MainDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467E33B28F8F18400E1BA17 /* MainDataType.swift */; };
+		1467E33E28F8F2CD00E1BA17 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467E33D28F8F2CD00E1BA17 /* MainViewModel.swift */; };
+		1467E34028F9000D00E1BA17 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467E33F28F9000D00E1BA17 /* MainDelegate.swift */; };
+		1467E34228F9313500E1BA17 /* MotifyPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467E34128F9313500E1BA17 /* MotifyPasswordViewController.swift */; };
 		146DEA2D28EA9507005F16A5 /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146DEA2C28EA9507005F16A5 /* Dictionary+Ex.swift */; };
 		1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04328C6D33A000BF2A3 /* AppDelegate.swift */; };
 		1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */; };
@@ -67,6 +71,10 @@
 		145084A928F7AF7B004EF237 /* LoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
 		145084AB28F7EB5B004EF237 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		145684E428F6B4C200A9D1D4 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		1467E33B28F8F18400E1BA17 /* MainDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataType.swift; sourceTree = "<group>"; };
+		1467E33D28F8F2CD00E1BA17 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1467E33F28F9000D00E1BA17 /* MainDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
+		1467E34128F9313500E1BA17 /* MotifyPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordViewController.swift; sourceTree = "<group>"; };
 		146DEA2C28EA9507005F16A5 /* Dictionary+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
 		1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onedayticket-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479C04328C6D33A000BF2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 			children = (
 				143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */,
 				145084A928F7AF7B004EF237 /* LoginDelegate.swift */,
+				1467E33D28F8F2CD00E1BA17 /* MainViewModel.swift */,
+				1467E33F28F9000D00E1BA17 /* MainDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,6 +143,7 @@
 				14B302C528EACEEC00C757C0 /* MainViewController.swift */,
 				145084A328F79CF2004EF237 /* PackageInfoViewController.swift */,
 				145084A528F79D76004EF237 /* WriteOffRecordViewController.swift */,
+				1467E34128F9313500E1BA17 /* MotifyPasswordViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 			children = (
 				14EB294328EAB04700BA6375 /* LoginDataType.swift */,
 				14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */,
+				1467E33B28F8F18400E1BA17 /* MainDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,8 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1467E33E28F8F2CD00E1BA17 /* MainViewModel.swift in Sources */,
 				143ED23B28EA6C99008C1C65 /* UIViewExtension.swift in Sources */,
 				14B302C628EACEEC00C757C0 /* MainViewController.swift in Sources */,
+				1467E34228F9313500E1BA17 /* MotifyPasswordViewController.swift in Sources */,
 				145084AA28F7AF7B004EF237 /* LoginDelegate.swift in Sources */,
 				1443106228C8728300715560 /* LoginViewController.swift in Sources */,
 				1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */,
@@ -397,6 +411,7 @@
 				14EB294E28EAB8A200BA6375 /* UserDefault.swift in Sources */,
 				146DEA2D28EA9507005F16A5 /* Dictionary+Ex.swift in Sources */,
 				14EB294D28EAB8A200BA6375 /* JsonUtil.swift in Sources */,
+				1467E33C28F8F18400E1BA17 /* MainDataType.swift in Sources */,
 				145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
 				14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */,
@@ -408,6 +423,7 @@
 				143ED23D28EA6C99008C1C65 /* UIDatePicker+Ext.swift in Sources */,
 				14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */,
 				145084A828F7A13C004EF237 /* UIImage+Ex.swift in Sources */,
+				1467E34028F9000D00E1BA17 /* MainDelegate.swift in Sources */,
 				14EB295228EAB8A200BA6375 /* ExampleUtil.swift in Sources */,
 				143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */,
 			);

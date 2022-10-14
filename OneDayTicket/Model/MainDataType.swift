@@ -8,23 +8,14 @@
 
 import Foundation
 
-public struct LoginDataType : Codable{
+public struct MainDataType : Codable{
     
      var sysCode: Int!
      var sysMsg: String!
      var data: LoginDataContent!
         
     struct LoginDataContent : Codable{
-        var account : String!
-        var session_id : String!
-        var member_guid : String!
-        var member_type : Int!
-        var account_name : String!
+        var session : String!
         var expired_time : String!
-        var member_name: NameDataType!
    }
-    struct NameDataType : Codable{
-        var en_US : String!
-        var zh_TW : String!
-    }
 }

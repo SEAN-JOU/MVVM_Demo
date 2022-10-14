@@ -19,7 +19,7 @@ class LoginViewModel {
             ApiClient.login(memberID: memberID, password: password, complete: { (data) in
                 let decoder = JSONDecoder()
                 if let loginData = try? decoder.decode(LoginDataType.self, from: data!){
-                    self.vc?.callback(loginData: loginData)
+                    self.vc?.loginCallBack(loginData: loginData)
                 }
             }
         )

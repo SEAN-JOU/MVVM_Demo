@@ -18,7 +18,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        backButton.addTarget(self, action: #selector(backTapped), for: .touchUpInside)
+        backButton.setOnClickListener {
+            self.dismiss(animated: true)
+        }
 
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
@@ -57,10 +59,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         view.layer.addSublayer(previewLayer)
 
         captureSession.startRunning()
-    }
-    
-    @objc private func backTapped() {
-        dismiss(animated: true)
     }
 
     func failed() {
