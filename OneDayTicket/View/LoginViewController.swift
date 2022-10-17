@@ -71,7 +71,6 @@ extension LoginViewController:LoginDelegate {
     func loginCallBack(loginData: LoginDataType) {
             if(loginData.sysCode >= 0){
                 DispatchQueue.main.async {
-                    Log.d(title: "aaa_session", message: loginData.data.session_id)
                     UserDefault.setValue(key: "session_id", value: loginData.data.session_id)
                     let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
                     vc1.modalPresentationStyle = .fullScreen

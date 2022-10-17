@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1429550228FD021400C5EDEF /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429550128FD021400C5EDEF /* ForgetPasswordViewModel.swift */; };
+		1429550428FD024E00C5EDEF /* ForgetPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429550328FD024E00C5EDEF /* ForgetPasswordDelegate.swift */; };
+		1429550628FD027400C5EDEF /* ForgetPasswordDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429550528FD027400C5EDEF /* ForgetPasswordDataType.swift */; };
 		143ED23928EA6C99008C1C65 /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23328EA6C99008C1C65 /* UIAlertController+Ext.swift */; };
 		143ED23A28EA6C99008C1C65 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23428EA6C99008C1C65 /* StringExtension.swift */; };
 		143ED23B28EA6C99008C1C65 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED23528EA6C99008C1C65 /* UIViewExtension.swift */; };
@@ -53,6 +56,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1429550128FD021400C5EDEF /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		1429550328FD024E00C5EDEF /* ForgetPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordDelegate.swift; sourceTree = "<group>"; };
+		1429550528FD027400C5EDEF /* ForgetPasswordDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordDataType.swift; sourceTree = "<group>"; };
 		143ED23328EA6C99008C1C65 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
 		143ED23428EA6C99008C1C65 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		143ED23528EA6C99008C1C65 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 				145084A928F7AF7B004EF237 /* LoginDelegate.swift */,
 				1467E33D28F8F2CD00E1BA17 /* MainViewModel.swift */,
 				1467E33F28F9000D00E1BA17 /* MainDelegate.swift */,
+				1429550128FD021400C5EDEF /* ForgetPasswordViewModel.swift */,
+				1429550328FD024E00C5EDEF /* ForgetPasswordDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				14EB294328EAB04700BA6375 /* LoginDataType.swift */,
 				14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */,
 				1467E33B28F8F18400E1BA17 /* MainDataType.swift */,
+				1429550528FD027400C5EDEF /* ForgetPasswordDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 				14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */,
 				14EB295028EAB8A200BA6375 /* ClosureSleeve.swift in Sources */,
 				145084A628F79D76004EF237 /* WriteOffRecordViewController.swift in Sources */,
+				1429550428FD024E00C5EDEF /* ForgetPasswordDelegate.swift in Sources */,
 				14EB294428EAB04700BA6375 /* LoginDataType.swift in Sources */,
 				14EB294F28EAB8A200BA6375 /* Log.swift in Sources */,
 				143ED24928EA6D81008C1C65 /* Strings.swift in Sources */,
@@ -415,6 +425,7 @@
 				145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
 				14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */,
+				1429550228FD021400C5EDEF /* ForgetPasswordViewModel.swift in Sources */,
 				1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */,
 				1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */,
 				145084AC28F7EB5B004EF237 /* CustomTabBar.swift in Sources */,
@@ -424,6 +435,7 @@
 				14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */,
 				145084A828F7A13C004EF237 /* UIImage+Ex.swift in Sources */,
 				1467E34028F9000D00E1BA17 /* MainDelegate.swift in Sources */,
+				1429550628FD027400C5EDEF /* ForgetPasswordDataType.swift in Sources */,
 				14EB295228EAB8A200BA6375 /* ExampleUtil.swift in Sources */,
 				143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */,
 			);

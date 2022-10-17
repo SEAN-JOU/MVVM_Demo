@@ -20,6 +20,7 @@ import UIKit
 class MotifyPasswordViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
+    var authcode : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,16 @@ class MotifyPasswordViewController: UIViewController {
             self.dismiss(animated: true)
         }
     }
+}
+
+
+extension MotifyPasswordViewController:UITextFieldDelegate {
     
+    // 當按下右下角的return鍵時觸發
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
 
 
