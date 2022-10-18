@@ -21,7 +21,7 @@ public struct ApiClient {
         request.timeoutInterval = 2
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
-        let parameters: [String: Any] = ["memberID": memberID, "password": password]
+        let parameters: [String: Any] = ["memberID": memberID, "password": (memberID+password).md5]
         request.httpBody = parameters.percentEscaped().data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) {data,response,error
             in guard let data = data,let dataString = String(data: data, encoding: .utf8),
@@ -46,8 +46,32 @@ public struct ApiClient {
             in guard let data = data,let dataString = String(data: data, encoding: .utf8),
                      let response = response as? HTTPURLResponse,
                      error == nil else {
+                            DispatchQueue.main.async {
+                                loadingView?.stopAnimating()
+                            }
                          return
                      }
+            Log.d(title: "aaaaaaaaa", message: dataString)
+            complete(data)
+        }
+        task.resume()
+    }
+    
+    static func resetPassword(authcode:String,newPassword:String,randNumber:String,complete: @escaping (_ data: Data? )->() ){
+        let url = URL(string: API_URL + "/merchant/reset_passwd.php")!
+        var request = URLRequest(url: url)
+        request.timeoutInterval = 2
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        let parameters: [String: Any] = ["authcode": authcode, "rand_num": randNumber, "new_password": (UserDefault.getValue(key: "memberID") as! String+newPassword).md5]
+        request.httpBody = parameters.percentEscaped().data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) {data,response,error
+            in guard let data = data,let dataString = String(data: data, encoding: .utf8),
+                     let response = response as? HTTPURLResponse,
+                     error == nil else {
+                         return
+                     }
+            Log.d(title: "aaaaaaaaa", message: dataString)
             complete(data)
         }
         task.resume()

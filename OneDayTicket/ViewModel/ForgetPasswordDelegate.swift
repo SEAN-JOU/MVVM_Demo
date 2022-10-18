@@ -8,6 +8,6 @@
 import Foundation
 
 protocol ForgetPasswordDelegate {
-    func forgetPasswordCallBack(forgetPasswordData: ForgetPasswordDataType)
+    func forgetCallBack(forgetPasswordData: ForgetPasswordDataType)
 }
 

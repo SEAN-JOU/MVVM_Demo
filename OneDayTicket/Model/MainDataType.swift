@@ -12,9 +12,9 @@ public struct MainDataType : Codable{
     
      var sysCode: Int!
      var sysMsg: String!
-     var data: LoginDataContent!
+     var data: MainDataContent!
         
-    struct LoginDataContent : Codable{
+    struct MainDataContent : Codable{
         var session : String!
         var expired_time : String!
    }

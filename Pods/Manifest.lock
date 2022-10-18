@@ -1,12 +1,16 @@
 PODS:
   - Alamofire (5.6.2)
   - Kingfisher (7.3.2)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - NYAlertViewController (1.3.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher (~> 7.0)
+  - NVActivityIndicatorView
   - NYAlertViewController
   - SVProgressHUD
 
@@ -14,15 +18,17 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - NVActivityIndicatorView
     - NYAlertViewController
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   NYAlertViewController: b93f82e2c1fc6d5e9485512ddbe7b481f463a074
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 704dfcf82d49b7b144188b55f7b8bd36af96e7a6
+PODFILE CHECKSUM: 1054de13a62283305e47b7a567f89dc86a692bb2
 
 COCOAPODS: 1.11.3

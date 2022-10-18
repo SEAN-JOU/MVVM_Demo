@@ -18,8 +18,17 @@ class LoginViewModel {
     func login(memberID:String,password:String){
             ApiClient.login(memberID: memberID, password: password, complete: { (data) in
                 let decoder = JSONDecoder()
-                if let loginData = try? decoder.decode(LoginDataType.self, from: data!){
-                    self.vc?.loginCallBack(loginData: loginData)
+                do {
+                    let loginData = try decoder.decode(LoginDataType.self, from: data!)
+                    if(loginData.sysCode != nil){
+                        self.vc?.loginCallBack(loginData: loginData)
+                    }else{
+                        DispatchQueue.main.async {
+                            self.vc?.alert(string: Strings.format_error)
+                        }
+                    }
+                } catch {
+                    self.vc?.alert(string: Strings.format_error)
                 }
             }
         )

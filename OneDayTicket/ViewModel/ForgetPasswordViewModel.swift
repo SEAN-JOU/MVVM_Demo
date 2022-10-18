@@ -15,11 +15,20 @@ class ForgetPasswordViewModel {
         self.vc = vc
     }
     
-    func login(memberID:String,email:String){
+    func forget(memberID:String,email:String){
             ApiClient.forget(memberID: memberID, email: email, complete: { (data) in
                 let decoder = JSONDecoder()
-                if let forgetPasswordDataType = try? decoder.decode(ForgetPasswordDataType.self, from: data!){
-                    
+                do {
+                    let forgetPasswordDataType = try decoder.decode(ForgetPasswordDataType.self, from: data!)
+                    if(forgetPasswordDataType.sysCode != nil){
+                        self.vc?.forgetCallBack(forgetPasswordData: forgetPasswordDataType)
+                    }else{
+                        DispatchQueue.main.async {
+                            self.vc?.alert(string: Strings.format_error)
+                        }
+                    }
+                } catch {
+                    self.vc?.alert(string: Strings.format_error)
                 }
             }
         )

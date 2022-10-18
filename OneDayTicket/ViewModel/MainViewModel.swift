@@ -19,8 +19,17 @@ class MainViewModel {
     func getdata(memberID:String){
             ApiClient.getdata(memberID: memberID, complete: { (data) in
                 let decoder = JSONDecoder()
-                if let mainData = try? decoder.decode(MainDataType.self, from: data!){
-                    self.vc?.getdataCallBack(mainData: mainData)
+                do {
+                    let mainData = try decoder.decode(MainDataType.self, from: data!)
+                    if(mainData.sysCode != nil){
+                        self.vc?.getdataCallBack(mainData: mainData)
+                    }else{
+                        DispatchQueue.main.async {
+                            self.vc?.alert(string: Strings.format_error)
+                        }
+                    }
+                } catch {
+                    self.vc?.alert(string: Strings.format_error)
                 }
             }
         )

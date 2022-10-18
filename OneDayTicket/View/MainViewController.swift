@@ -7,12 +7,14 @@ import UIKit
 class MainViewController:UITabBarController{
     
     var mainViewModel = MainViewModel()
-
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
     
+    func alert(string:String){
+        UIAlertController.showOkAlertBox(title:string,vc: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

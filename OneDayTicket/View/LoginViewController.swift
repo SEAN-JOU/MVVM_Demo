@@ -2,7 +2,7 @@
 import UIKit
 
 
-class LoginViewController: UIViewController{
+class LoginViewController: BaseViewController{
     
     @IBOutlet weak var memberIDTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController{
     
     @objc private func loginTapped() {
         if(memberIDTextField.text! != nil && memberIDTextField.text! != "" && passwordTextField.text! != nil && passwordTextField.text! != ""){
-                loginViewModel.login(memberID: memberIDTextField.text!, password: (memberIDTextField.text!+passwordTextField.text!).md5)
+                loginViewModel.login(memberID: memberIDTextField.text!, password: passwordTextField.text!)
             UserDefault.setValue(key: "memberID", value: memberIDTextField.text!)
             if(rememberCheckBox.isChecked){
                 UserDefault.setValue(key: "password", value: passwordTextField.text!)

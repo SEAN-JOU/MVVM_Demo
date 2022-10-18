@@ -8,28 +8,46 @@
 
 import UIKit
 
-class ForgetPasswordViewController: UIViewController {
+
+class ForgetPasswordViewController: BaseViewController {
     
     @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var accountTextField: UITextField!
+    @IBOutlet weak var memberIDTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var sendBtn: UIButton!
     
     var forgetPasswordViewModel = ForgetPasswordViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        accountTextField.delegate = self
+        memberIDTextField.delegate = self
         emailTextField.delegate = self
         forgetPasswordViewModel.initViewModel(vc: self)
         
         backButton.setOnClickListener {
             self.dismiss(animated: true)
         }
+        sendBtn.setOnClickListener {
+            loadingView?.startAnimating()
+            if(self.memberIDTextField.text! != nil && self.memberIDTextField.text! != "" && self.emailTextField.text! != nil && self.emailTextField.text! != ""){
+                if(self.isClick){
+                    self.isClick = false
+                    UserDefault.setValue(key: "memberID", value: self.memberIDTextField.text!)
+                    self.forgetPasswordViewModel.forget(memberID: self.memberIDTextField!.text!, email: self.self.emailTextField!.text!)
+                }
+            }else{
+                UIAlertController.showOkAlertBox(title:"輸入框不得為空",vc: self)
+                loadingView?.stopAnimating()
+           }
+        }
     }
 }
 
 extension ForgetPasswordViewController:ForgetPasswordDelegate {
-    func forgetPasswordCallBack(forgetPasswordData: ForgetPasswordDataType) {
+    func forgetCallBack(forgetPasswordData: ForgetPasswordDataType) {
+        DispatchQueue.main.async {
+            loadingView?.stopAnimating()
+        }
         if(forgetPasswordData.sysCode >= 0){
             DispatchQueue.main.async {
                 let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController
@@ -42,9 +60,6 @@ extension ForgetPasswordViewController:ForgetPasswordDelegate {
                 switch forgetPasswordData.sysCode {
                 case -1:
                     UIAlertController.showOkAlertBox(title:"帳號不存在",vc: self)
-                    break
-                case -2:
-                    UIAlertController.showOkAlertBox(title:"帳號密碼不正確",vc: self)
                     break
                 case -3:
                     UIAlertController.showOkAlertBox(title:"帳號未啟用",vc: self)

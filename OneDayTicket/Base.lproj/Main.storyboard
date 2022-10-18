@@ -132,6 +132,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="account" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2X-ic-u8a">
                                 <rect key="frame" x="150" y="234.5" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="bGM-Ka-aSc"/>
                                     <constraint firstAttribute="height" constant="40" id="bjt-ya-XMv"/>
@@ -154,13 +155,14 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBc-7y-9zK">
                                 <rect key="frame" x="150" y="291.5" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bm6-yf-TUs"/>
                                     <constraint firstAttribute="width" constant="200" id="a4x-H6-O9n"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -234,9 +236,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="accountTextField" destination="H2X-ic-u8a" id="csB-ZR-ueT"/>
                         <outlet property="backButton" destination="Ulo-xc-hTq" id="bWj-B3-P2a"/>
                         <outlet property="emailTextField" destination="JBc-7y-9zK" id="iDN-Zx-3qp"/>
+                        <outlet property="memberIDTextField" destination="H2X-ic-u8a" id="XKo-K5-ehO"/>
+                        <outlet property="sendBtn" destination="zZY-BD-NlS" id="gRN-3l-LYe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upc-22-bmb" sceneMemberID="firstResponder"/>
@@ -262,6 +265,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="account" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chp-zX-3Zf">
                                 <rect key="frame" x="85" y="291" width="289" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9Z3-nY-lTa"/>
                                 </constraints>
@@ -283,6 +287,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bm-ue-fFo">
                                 <rect key="frame" x="85" y="348" width="289" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fKQ-jC-yTD"/>
                                 </constraints>
@@ -664,6 +669,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="account" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgN-pl-QqK">
                                 <rect key="frame" x="150" y="234.5" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="kdX-fL-wpx"/>
                                     <constraint firstAttribute="width" constant="200" id="v1b-Wi-A4i"/>
@@ -686,6 +692,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vzc-gj-jlq">
                                 <rect key="frame" x="150" y="291.5" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DbS-mj-yW0"/>
                                     <constraint firstAttribute="width" constant="200" id="anW-qf-0iJ"/>
@@ -726,6 +733,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9h-tF-xKU">
                                 <rect key="frame" x="150" y="348.5" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="QDs-Hw-E54"/>
                                     <constraint firstAttribute="height" constant="40" id="wtw-jH-KkJ"/>
@@ -802,7 +810,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="againPasswordTextField" destination="D9h-tF-xKU" id="Ji8-Fy-az7"/>
                         <outlet property="backButton" destination="7h1-Bp-eK0" id="Xes-YT-0uI"/>
+                        <outlet property="motifyButton" destination="OGi-qC-k9q" id="aJK-cH-gM4"/>
+                        <outlet property="newPasswordTextField" destination="Vzc-gj-jlq" id="MPr-by-zfr"/>
+                        <outlet property="randomTextField" destination="NgN-pl-QqK" id="sLm-kn-q4D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kw-If-KPf" sceneMemberID="firstResponder"/>

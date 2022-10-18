@@ -7,5 +7,7 @@ target 'onedayticket-ios' do
   pod 'NYAlertViewController'
   pod 'SVProgressHUD'
   pod 'Alamofire'
+  pod 'NVActivityIndicatorView'
+
 
 end

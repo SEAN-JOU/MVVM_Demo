@@ -62,6 +62,7 @@ extension Strings {
     public static let package_info = NSLocalizedString("package_info", comment: "")
     public static let update = NSLocalizedString("update", comment: "")
     public static let write_off_record = NSLocalizedString("write_off_record", comment: "")
+    public static let format_error = NSLocalizedString("format_error", comment: "")
 
     
     

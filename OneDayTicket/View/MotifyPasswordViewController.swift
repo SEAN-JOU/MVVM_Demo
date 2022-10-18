@@ -6,35 +6,86 @@
 //
 
 import Foundation
-
-//
-//  ForgetPasswordViewController.swift
-//  Chinastockanalysis
-//
-//  Created by sean on 2021/10/7.
-//  Copyright © 2021 Jou Sean. All rights reserved.
-//
-
 import UIKit
 
-class MotifyPasswordViewController: UIViewController {
+
+class MotifyPasswordViewController: BaseViewController {
     
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var motifyButton: UIButton!
+    var motifyPasswordViewModel = MotifyPasswordViewModel()
     var authcode : String!
+    @IBOutlet weak var randomTextField: UITextField!
+    @IBOutlet weak var newPasswordTextField: UITextField!
+    @IBOutlet weak var againPasswordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        randomTextField.delegate = self
+        newPasswordTextField.delegate = self
+        againPasswordTextField.delegate = self
+        
+        motifyPasswordViewModel.initViewModel(vc: self)
         backButton.setOnClickListener {
             self.dismiss(animated: true)
+        }
+        motifyButton.setOnClickListener {
+            loadingView?.startAnimating()
+            if(self.randomTextField.text! != nil && self.randomTextField.text! != "" && self.againPasswordTextField.text! != nil && self.againPasswordTextField.text! != "" && self.newPasswordTextField.text! != nil && self.newPasswordTextField.text! != ""){
+                if(self.againPasswordTextField.text == self.newPasswordTextField.text){
+                    if(self.isClick){
+                        self.isClick = false
+                        self.motifyPasswordViewModel.resetPassword(authcode: self.authcode, newPassword: self.newPasswordTextField.text!, randNumber: self.randomTextField.text!)
+                    }
+                }else{
+                    UIAlertController.showOkAlertBox(title:"密碼不一致",vc: self)
+                    loadingView?.stopAnimating()
+                }
+            }else{
+                UIAlertController.showOkAlertBox(title:"輸入框不得為空",vc: self)
+                loadingView?.stopAnimating()
+            }
         }
     }
 }
 
+extension MotifyPasswordViewController:MotifyPasswordDelegate {
+    func resetPasswordCallBack(motifyDataType: MotifyDataType) {
+        DispatchQueue.main.async {
+            loadingView?.stopAnimating()
+        }
+        if(motifyDataType.sysCode >= 0){
+            DispatchQueue.main.async {
+                UIAlertController.showUpdateAlertBox(title:"修改成功",buttonName:Strings.ok,vc: self,okHandler:{_ in
+                    DispatchQueue.main.async {
+                        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        vc1.modalPresentationStyle = .fullScreen
+                        self.present(vc1, animated: true, completion: nil)
+                    }
+                })
+            }
+        }else{
+            DispatchQueue.main.async {
+                switch motifyDataType.sysCode {
+                case -1:
+                    UIAlertController.showOkAlertBox(title:"未登入或session已過期",vc: self)
+                    break
+                case -2:
+                    UIAlertController.showOkAlertBox(title:"商店被停用",vc: self)
+                    break
+                case -3:
+                    UIAlertController.showOkAlertBox(title:"帳號被系統管理者鎖定",vc: self)
+                    break
+                default: break
+                }
+            }
+        }
+    }
+}
 
 extension MotifyPasswordViewController:UITextFieldDelegate {
     
-    // 當按下右下角的return鍵時觸發
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

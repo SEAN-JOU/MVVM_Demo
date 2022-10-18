@@ -9,3 +9,4 @@
 "package_info" = "套票資訊";
 "update" = "更新";
 "write_off_record" = "核銷紀錄";
+"format_error" = "資料格式錯誤";
