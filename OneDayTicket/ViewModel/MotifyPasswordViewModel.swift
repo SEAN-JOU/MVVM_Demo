@@ -19,16 +19,18 @@ class MotifyPasswordViewModel {
         ApiClient.resetPassword(authcode: authcode, newPassword: newPassword, randNumber: randNumber, complete: { (data) in
             let decoder = JSONDecoder()
             do {
-                let motifyDataType = try decoder.decode(MotifyDataType.self, from: data!)
-                if(motifyDataType.sysCode != nil){
-                    self.vc?.resetPasswordCallBack(motifyDataType: motifyDataType)
+                let motifyPasswordDataType = try decoder.decode(MotifyPasswordDataType.self, from: data!)
+                if(motifyPasswordDataType.sysCode != nil){
+                    self.vc?.resetPasswordCallBack(motifyPasswordDataType: motifyPasswordDataType)
                 }else{
                     DispatchQueue.main.async {
                         self.vc?.alert(string: Strings.format_error)
                     }
                 }
             } catch {
-                self.vc?.alert(string: Strings.format_error)
+                DispatchQueue.main.async {
+                    self.vc?.alert(string: Strings.format_error)
+                }
             }
         })
     }

@@ -8,6 +8,6 @@
 import Foundation
 
 protocol MotifyPasswordDelegate {
-    func resetPasswordCallBack(motifyDataType: MotifyDataType)
+    func resetPasswordCallBack(motifyPasswordDataType: MotifyPasswordDataType)
 }
 

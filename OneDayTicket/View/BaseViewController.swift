@@ -18,8 +18,8 @@ class BaseViewController: UIViewController{
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let frame = CGRect(x: self.view.frame.width/2-25, y: self.view.frame.height/2-25, width: 50, height: 50)
-        loadingView = NVActivityIndicatorView(frame: frame,type: .ballGridPulse,color: .red)
+        let frame = CGRect(x: self.view.frame.width/2-25, y: 300, width: 50, height: 50)
+        loadingView = NVActivityIndicatorView(frame: frame,type: .lineSpinFadeLoader,color: .gray)
         self.view.addSubview(loadingView!)
     }
     

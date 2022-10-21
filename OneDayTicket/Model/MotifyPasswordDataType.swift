@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct MotifyDataType : Codable{
+public struct MotifyPasswordDataType : Codable{
     
     var sysCode: Int!
     var sysMsg: String!

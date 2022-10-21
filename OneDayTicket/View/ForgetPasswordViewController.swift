@@ -76,6 +76,9 @@ extension ForgetPasswordViewController:ForgetPasswordDelegate {
                 case -7:
                     UIAlertController.showOkAlertBox(title:"會員已被系統管理者鎖定",vc: self)
                     break
+                case -8:
+                    UIAlertController.showOkAlertBox(title:"註冊信箱不正確",vc: self)
+                    break
                 default: break
                 }
             }

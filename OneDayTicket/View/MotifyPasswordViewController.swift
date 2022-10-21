@@ -51,13 +51,14 @@ class MotifyPasswordViewController: BaseViewController {
 }
 
 extension MotifyPasswordViewController:MotifyPasswordDelegate {
-    func resetPasswordCallBack(motifyDataType: MotifyDataType) {
+    func resetPasswordCallBack(motifyPasswordDataType: MotifyPasswordDataType) {
         DispatchQueue.main.async {
             loadingView?.stopAnimating()
         }
-        if(motifyDataType.sysCode >= 0){
+        if(motifyPasswordDataType.sysCode >= 0){
             DispatchQueue.main.async {
-                UIAlertController.showUpdateAlertBox(title:"修改成功",buttonName:Strings.ok,vc: self,okHandler:{_ in
+                UserDefault.setValue(key: "password", value: "")
+                UIAlertController.showUpdateAlertBox(title:"修改成功",buttonName:"返回登入頁",vc: self,okHandler:{_ in
                     DispatchQueue.main.async {
                         let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                         vc1.modalPresentationStyle = .fullScreen
@@ -67,7 +68,7 @@ extension MotifyPasswordViewController:MotifyPasswordDelegate {
             }
         }else{
             DispatchQueue.main.async {
-                switch motifyDataType.sysCode {
+                switch motifyPasswordDataType.sysCode {
                 case -1:
                     UIAlertController.showOkAlertBox(title:"未登入或session已過期",vc: self)
                     break
@@ -76,6 +77,12 @@ extension MotifyPasswordViewController:MotifyPasswordDelegate {
                     break
                 case -3:
                     UIAlertController.showOkAlertBox(title:"帳號被系統管理者鎖定",vc: self)
+                    break
+                case -14:
+                    UIAlertController.showOkAlertBox(title:"驗證碼已使用",vc: self)
+                    break
+                case -15:
+                    UIAlertController.showOkAlertBox(title:"驗證碼錯誤",vc: self)
                     break
                 default: break
                 }

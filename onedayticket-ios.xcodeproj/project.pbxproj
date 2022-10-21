@@ -36,7 +36,7 @@
 		147387F928FE3A7000429409 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387F828FE3A7000429409 /* BaseViewController.swift */; };
 		147387FB28FE700400429409 /* MotifyPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FA28FE700400429409 /* MotifyPasswordViewModel.swift */; };
 		147387FD28FE701100429409 /* MotifyPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FC28FE701100429409 /* MotifyPasswordDelegate.swift */; };
-		147387FF28FE90A900429409 /* MotifyDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FE28FE90A900429409 /* MotifyDataType.swift */; };
+		147387FF28FE90A900429409 /* MotifyPasswordDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */; };
 		1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04328C6D33A000BF2A3 /* AppDelegate.swift */; };
 		1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */; };
 		1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */; };
@@ -89,7 +89,7 @@
 		147387F828FE3A7000429409 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		147387FA28FE700400429409 /* MotifyPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordViewModel.swift; sourceTree = "<group>"; };
 		147387FC28FE701100429409 /* MotifyPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordDelegate.swift; sourceTree = "<group>"; };
-		147387FE28FE90A900429409 /* MotifyDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyDataType.swift; sourceTree = "<group>"; };
+		147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordDataType.swift; sourceTree = "<group>"; };
 		1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onedayticket-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479C04328C6D33A000BF2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */,
 				1467E33B28F8F18400E1BA17 /* MainDataType.swift */,
 				1429550528FD027400C5EDEF /* ForgetPasswordDataType.swift */,
-				147387FE28FE90A900429409 /* MotifyDataType.swift */,
+				147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -437,7 +437,7 @@
 				14EB294D28EAB8A200BA6375 /* JsonUtil.swift in Sources */,
 				1467E33C28F8F18400E1BA17 /* MainDataType.swift in Sources */,
 				145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */,
-				147387FF28FE90A900429409 /* MotifyDataType.swift in Sources */,
+				147387FF28FE90A900429409 /* MotifyPasswordDataType.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
 				14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */,
 				147387FD28FE701100429409 /* MotifyPasswordDelegate.swift in Sources */,
@@ -617,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
@@ -650,7 +650,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;

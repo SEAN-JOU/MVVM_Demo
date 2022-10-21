@@ -47,7 +47,8 @@ class LoginViewController: BaseViewController{
     
     @objc private func loginTapped() {
         if(memberIDTextField.text! != nil && memberIDTextField.text! != "" && passwordTextField.text! != nil && passwordTextField.text! != ""){
-                loginViewModel.login(memberID: memberIDTextField.text!, password: passwordTextField.text!)
+            loadingView?.startAnimating()
+            loginViewModel.login(memberID: memberIDTextField.text!, password: passwordTextField.text!)
             UserDefault.setValue(key: "memberID", value: memberIDTextField.text!)
             if(rememberCheckBox.isChecked){
                 UserDefault.setValue(key: "password", value: passwordTextField.text!)
@@ -69,6 +70,9 @@ extension LoginViewController:UITextFieldDelegate {
 
 extension LoginViewController:LoginDelegate {
     func loginCallBack(loginData: LoginDataType) {
+            DispatchQueue.main.async {
+                loadingView?.stopAnimating()
+            }
             if(loginData.sysCode >= 0){
                 DispatchQueue.main.async {
                     UserDefault.setValue(key: "session_id", value: loginData.data.session_id)

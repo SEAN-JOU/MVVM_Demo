@@ -29,7 +29,9 @@ class MainViewModel {
                         }
                     }
                 } catch {
-                    self.vc?.alert(string: Strings.format_error)
+                    DispatchQueue.main.async {
+                        self.vc?.alert(string: Strings.format_error)
+                    }
                 }
             }
         )
