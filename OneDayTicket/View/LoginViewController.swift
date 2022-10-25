@@ -23,6 +23,8 @@ class LoginViewController: BaseViewController{
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         versionLabel.text = "v " + appVersion!
         
+        loginViewModel.getVersion()
+        
         if(UserDefault.getValue(key: "password") as? String != nil && UserDefault.getValue(key: "password") as? String != ""){
             rememberCheckBox.isChecked = true
             passwordTextField.text = UserDefault.getValue(key: "password") as? String
@@ -69,6 +71,39 @@ extension LoginViewController:UITextFieldDelegate {
 }
 
 extension LoginViewController:LoginDelegate {
+    func versionCallBack(versionData: VersionDataType) {
+        if(versionData.sysCode >= 0){
+            let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+            if appVersion!.compare(versionData.data.ios_version, options: .numeric) == .orderedAscending{
+                if(versionData.data.android_need_update){
+                    DispatchQueue.main.async {
+                        UIAlertController.showUpdateAlertBox(title: "版本更新",message: "前往App Store更新Oride套票管理平台",vc: self,okHandler: { (_) in
+                            if let url = URL(string: versionData.data.ios_app_path), UIApplication.shared.canOpenURL(url) {
+                                if #available(iOS 10.0, *) {
+                                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                                } else {
+                                    UIApplication.shared.openURL(url)
+                                }
+                            }
+                        })
+                    }
+                }else{
+                    DispatchQueue.main.async {
+                        UIAlertController.showUpdateCancelAlertBox(title: "版本更新",message: "前往App Store更新Oride套票管理平台",vc: self,okHandler: { (_) in
+                            if let url = URL(string: versionData.data.ios_app_path), UIApplication.shared.canOpenURL(url) {
+                                if #available(iOS 10.0, *) {
+                                    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                                } else {
+                                    UIApplication.shared.openURL(url)
+                                }
+                            }
+                        })
+                    }
+                }
+            }
+        }
+    }
+    
     func loginCallBack(loginData: LoginDataType) {
             DispatchQueue.main.async {
                 loadingView?.stopAnimating()

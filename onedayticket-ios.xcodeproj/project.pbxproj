@@ -22,6 +22,7 @@
 		143ED24B28EA7BC4008C1C65 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24A28EA7BC4008C1C65 /* ApiClient.swift */; };
 		143ED24D28EA85F6008C1C65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */; };
 		1443106228C8728300715560 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443106128C8728300715560 /* LoginViewController.swift */; };
+		1446158D290786C100A6A857 /* VersionDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1446158C290786C100A6A857 /* VersionDataType.swift */; };
 		145084A428F79CF2004EF237 /* PackageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A328F79CF2004EF237 /* PackageInfoViewController.swift */; };
 		145084A628F79D76004EF237 /* WriteOffRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A528F79D76004EF237 /* WriteOffRecordViewController.swift */; };
 		145084A828F7A13C004EF237 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145084A728F7A13C004EF237 /* UIImage+Ex.swift */; };
@@ -75,6 +76,7 @@
 		143ED24A28EA7BC4008C1C65 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		143ED24C28EA85F6008C1C65 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1443106128C8728300715560 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1446158C290786C100A6A857 /* VersionDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDataType.swift; sourceTree = "<group>"; };
 		145084A328F79CF2004EF237 /* PackageInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfoViewController.swift; sourceTree = "<group>"; };
 		145084A528F79D76004EF237 /* WriteOffRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteOffRecordViewController.swift; sourceTree = "<group>"; };
 		145084A728F7A13C004EF237 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				1467E33B28F8F18400E1BA17 /* MainDataType.swift */,
 				1429550528FD027400C5EDEF /* ForgetPasswordDataType.swift */,
 				147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */,
+				1446158C290786C100A6A857 /* VersionDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				143ED23B28EA6C99008C1C65 /* UIViewExtension.swift in Sources */,
 				14B302C628EACEEC00C757C0 /* MainViewController.swift in Sources */,
 				1467E34228F9313500E1BA17 /* MotifyPasswordViewController.swift in Sources */,
+				1446158D290786C100A6A857 /* VersionDataType.swift in Sources */,
 				145084AA28F7AF7B004EF237 /* LoginDelegate.swift in Sources */,
 				1443106228C8728300715560 /* LoginViewController.swift in Sources */,
 				1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */,
@@ -617,7 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
@@ -650,7 +654,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 8V8G7US8XU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;

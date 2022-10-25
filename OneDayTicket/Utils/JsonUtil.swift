@@ -39,8 +39,6 @@ class JsonUtil:NSObject{
         return ""
     }
     
-  
-    
     static func stringToJsonArrayforFilter(string:String) -> [Any] {
         let decoder = JSONDecoder()
         var s :String = string.replacingOccurrences(of: "[[", with: "")
@@ -49,7 +47,4 @@ class JsonUtil:NSObject{
         var dd = a1.components(separatedBy: splitString)
         return dd
     }
-    
-    
-    
 }

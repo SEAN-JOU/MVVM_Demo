@@ -35,4 +35,25 @@ class LoginViewModel {
             }
         )
     }
+    
+    func getVersion(){
+            ApiClient.getVersion(complete: { (data) in
+                let decoder = JSONDecoder()
+                do {
+                    let versionData = try decoder.decode(VersionDataType.self, from: data!)
+                    if(versionData.sysCode != nil){
+                        self.vc?.versionCallBack(versionData: versionData)
+                    }else{
+                        DispatchQueue.main.async {
+                            self.vc?.alert(string: Strings.format_error)
+                        }
+                    }
+                } catch {
+                    DispatchQueue.main.async {
+                        self.vc?.alert(string: Strings.format_error)
+                    }
+                }
+            }
+        )
+    }
 }

@@ -34,6 +34,28 @@ public struct ApiClient {
         task.resume()
     }
     
+    
+    static func getVersion(complete: @escaping (_ data: Data? )->() ){
+        let url = URL(string: API_URL + "/merchant/getversion.php")!
+        var request = URLRequest(url: url)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+            } else {
+                if let response = response as? HTTPURLResponse {
+                }
+                if let data = data, let dataString = String(data: data, encoding: .utf8) {
+                    let decoder = JSONDecoder()
+                        
+                    }
+                }
+                complete(data)
+            }
+        task.resume()
+    }
+    
+    
     static func forget(memberID:String,email:String,complete: @escaping (_ data: Data? )->() ){
         let url = URL(string: API_URL + "/merchant/forget.php")!
         var request = URLRequest(url: url)
@@ -51,11 +73,11 @@ public struct ApiClient {
                             }
                          return
                      }
-            Log.d(title: "aaaaaaaaa", message: dataString)
             complete(data)
         }
         task.resume()
     }
+    
     
     static func resetPassword(authcode:String,newPassword:String,randNumber:String,complete: @escaping (_ data: Data? )->() ){
         let url = URL(string: API_URL + "/merchant/reset_passwd.php")!
@@ -71,7 +93,6 @@ public struct ApiClient {
                      error == nil else {
                          return
                      }
-            Log.d(title: "aaaaaaaaa", message: dataString)
             complete(data)
         }
         task.resume()

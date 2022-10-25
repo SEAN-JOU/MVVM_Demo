@@ -21,6 +21,10 @@ public struct LoginDataType : Codable{
         var member_type : Int!
         var account_name : String!
         var expired_time : String!
+        var member_email : String!
+        var account_email : String!
+        var renew_password : Bool!
+        var logo_url: String!
         var member_name: NameDataType!
    }
     struct NameDataType : Codable{

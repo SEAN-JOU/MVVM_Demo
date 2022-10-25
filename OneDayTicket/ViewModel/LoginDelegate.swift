@@ -9,5 +9,6 @@ import Foundation
 
 protocol LoginDelegate {
     func loginCallBack(loginData: LoginDataType)
+    func versionCallBack(versionData: VersionDataType)
 }
 
