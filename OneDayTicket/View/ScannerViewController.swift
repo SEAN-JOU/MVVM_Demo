@@ -8,18 +8,26 @@
 import AVFoundation
 import UIKit
 
-class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     
     @IBOutlet weak var backButton: UIButton!
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
+    var scannerViewModel = ScannerViewModel()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scannerViewModel.initViewModel(vc: self)
 
         backButton.setOnClickListener {
-            self.dismiss(animated: true)
+            DispatchQueue.main.async {
+                let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+                vc1.modalPresentationStyle = .fullScreen
+                self.present(vc1, animated: true, completion: nil)
+            }
         }
 
         view.backgroundColor = UIColor.black
@@ -85,7 +93,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
 
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-//        captureSession.stopRunning()
+
 
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
@@ -93,13 +101,14 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             found(code: stringValue)
         }
-
+//        captureSession.stopRunning()
 //        dismiss(animated: true)
     }
 
     func found(code: String) {
         DispatchQueue.main.async {
             self.view.showToast(text: code)
+            self.scannerViewModel.getticketinfo(memberID: UserDefault.getValue(key: "memberID") as! String, qrcode_data: code, session: UserDefault.getValue(key: "session") as! String)
         }
     }
 
@@ -109,5 +118,13 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
+    }
+}
+
+
+
+extension ScannerViewController:ScannerDelegate {
+    func getticketinfo(scannerData: ScannerDataType) {
+        
     }
 }

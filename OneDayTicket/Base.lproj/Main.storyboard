@@ -74,6 +74,27 @@
                                     <constraint firstAttribute="bottom" secondItem="vNk-MG-CyG" secondAttribute="bottom" constant="5" id="aQ2-bW-oC9"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8C-3v-7Z4">
+                                <rect key="frame" x="107" y="792" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3hg-EI-8Jf"/>
+                                    <constraint firstAttribute="width" constant="200" id="FQg-SE-7Va"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="手動輸入核銷碼">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +102,8 @@
                             <constraint firstItem="Gke-62-VeB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3d0-4H-DG4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Gke-62-VeB" secondAttribute="top" constant="44" id="B7O-h2-arv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gke-62-VeB" secondAttribute="trailing" id="KBB-q4-E4T"/>
+                            <constraint firstItem="N8C-3v-7Z4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gFd-ax-1vp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N8C-3v-7Z4" secondAttribute="bottom" constant="20" id="kZp-da-jLZ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -88,6 +111,27 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQt-A5-FBX">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                    <color key="backgroundColor" systemColor="tintColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Nz6-hY-J15"/>
+                        <constraint firstAttribute="width" constant="120" id="gEE-pY-Gp6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" red="0.0039215686269999999" green="0.5568627451" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="修改">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </objects>
             <point key="canvasLocation" x="2299" y="757"/>
         </scene>
@@ -454,14 +498,8 @@
                 <tabBarController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2xy-Zf-hnm" customClass="MainViewController" customModule="onedayticket_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zxh-ef-Jdj">
                         <nil key="title"/>
-                        <leftBarButtonItems>
-                            <barButtonItem title="Item" id="Byb-hR-3dP"/>
-                            <barButtonItem title="Item" landscapeImage="fb_icon" id="dFd-aa-JaA"/>
-                        </leftBarButtonItems>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" landscapeImage="search_icon" id="VoN-pQ-wJy"/>
-                            <barButtonItem title="Item" landscapeImage="ic_notifications" id="UVA-X4-B9V"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Byb-hR-3dP"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="VoN-pQ-wJy"/>
                     </navigationItem>
                     <tabBar key="tabBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rGr-gJ-1XH" customClass="CustomTabBar" customModule="onedayticket_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
@@ -495,13 +533,13 @@
                         </tabBarAppearance>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="height">
-                                <real key="value" value="100"/>
+                                <real key="value" value="95"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                <real key="value" value="1"/>
+                                <real key="value" value="0.0"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -518,13 +556,22 @@
         <scene sceneID="NfI-7d-Ckb">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavID" id="QCZ-e1-doW" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="FHp-i4-BhI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" largeTitles="YES" id="FHp-i4-BhI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.20392156859999999" green="0.2274509804" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.20392156859999999" green="0.2274509804" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yYk-xf-YFL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="2xy-Zf-hnm" kind="relationship" relationship="rootViewController" id="UBZ-eH-TPK"/>
                     </connections>
@@ -822,17 +869,32 @@
             </objects>
             <point key="canvasLocation" x="688" y="757"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="DQz-q2-NCV">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gqj-O8-eZb" customClass="MenuViewController" customModule="onedayticket_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lfq-Jz-rdr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KTS-0O-6lI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pu-dm-5Jh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="757"/>
+        </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="chevron_left" width="96" height="96"/>
-        <image name="fb_icon" width="48" height="48"/>
-        <image name="ic_notifications" width="48" height="48"/>
         <image name="ic_person" width="128" height="128"/>
         <image name="ic_vpn_key" width="128" height="128"/>
         <image name="logo_name" width="800" height="400"/>
         <image name="qrcode" width="512" height="512"/>
-        <image name="search_icon" width="61" height="61"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

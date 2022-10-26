@@ -88,7 +88,6 @@ extension ForgetPasswordViewController:ForgetPasswordDelegate {
 
 extension ForgetPasswordViewController:UITextFieldDelegate {
     
-    // 當按下右下角的return鍵時觸發
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

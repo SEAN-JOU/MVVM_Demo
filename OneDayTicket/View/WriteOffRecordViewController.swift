@@ -12,14 +12,13 @@ class WriteOffRecordViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-                
         qrcodeBtn.setOnClickListener {
+            DispatchQueue.main.async {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "ScannerViewController") as! ScannerViewController
-                vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-                vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)
+            }
         }
-        
     }
 }

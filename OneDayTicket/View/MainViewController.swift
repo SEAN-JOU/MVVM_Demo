@@ -3,8 +3,7 @@
 import UIKit
 
 
-
-class MainViewController:UITabBarController{
+class MainViewController:UITabBarController, UINavigationControllerDelegate{
     
     var mainViewModel = MainViewModel()
     
@@ -20,6 +19,8 @@ class MainViewController:UITabBarController{
         super.viewDidLoad()
         mainViewModel.initViewModel(vc: self)
         mainViewModel.getdata(memberID: UserDefault.getValue(key: "memberID") as! String)
+//        navigationItem.leftBarButtonItems![0] = UIBarButtonItem.menuButton(self, action: #selector(moveToNotifyVC), imageName: "chevron_left")
+        navigationItem.title = Strings.login_title
     }
     
     override func viewWillAppear(_ animated: Bool) {

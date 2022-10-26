@@ -63,7 +63,6 @@ class LoginViewController: BaseViewController{
 
 extension LoginViewController:UITextFieldDelegate {
     
-    // 當按下右下角的return鍵時觸發
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -110,8 +109,8 @@ extension LoginViewController:LoginDelegate {
             }
             if(loginData.sysCode >= 0){
                 DispatchQueue.main.async {
-                    UserDefault.setValue(key: "session_id", value: loginData.data.session_id)
-                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                    UserDefault.setValue(key: "session", value: loginData.data.session_id)
+                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
                     vc1.modalPresentationStyle = .fullScreen
                     self.present(vc1, animated: true, completion: nil)
                 }
