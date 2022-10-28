@@ -52,6 +52,7 @@ extension ForgetPasswordViewController:ForgetPasswordDelegate {
             DispatchQueue.main.async {
                 let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController
                 vc1.authcode = forgetPasswordData.data.authcode
+                vc1.isFirst = false
                 vc1.modalPresentationStyle = .fullScreen
                 self.present(vc1, animated: true, completion: nil)
             }

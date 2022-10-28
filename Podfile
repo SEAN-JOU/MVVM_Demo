@@ -5,7 +5,6 @@ target 'onedayticket-ios' do
   use_frameworks!
   pod 'Kingfisher', '~> 7.0'
   pod 'NYAlertViewController'
-  pod 'SVProgressHUD'
   pod 'Alamofire'
   pod 'NVActivityIndicatorView'
 

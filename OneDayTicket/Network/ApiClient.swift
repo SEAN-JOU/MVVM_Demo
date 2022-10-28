@@ -49,8 +49,6 @@ public struct ApiClient {
                      error == nil else {
                          return
                      }
-            Log.d(title: "aaaaaa", message: dataString)
-
             complete(data)
         }
         task.resume()
@@ -134,6 +132,7 @@ public struct ApiClient {
                      error == nil else {
                          return
                      }
+            Log.d(title: "aaaaaa", message: dataString)
             complete(data)
         }
         task.resume()

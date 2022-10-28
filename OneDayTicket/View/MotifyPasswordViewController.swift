@@ -15,6 +15,7 @@ class MotifyPasswordViewController: BaseViewController {
     @IBOutlet weak var motifyButton: UIButton!
     var motifyPasswordViewModel = MotifyPasswordViewModel()
     var authcode : String!
+    var isFirst : Bool!
     @IBOutlet weak var randomTextField: UITextField!
     @IBOutlet weak var newPasswordTextField: UITextField!
     @IBOutlet weak var againPasswordTextField: UITextField!
@@ -30,8 +31,16 @@ class MotifyPasswordViewController: BaseViewController {
         backButton.setOnClickListener {
             self.dismiss(animated: true)
         }
+        
+        if(isFirst){
+            randomTextField.isHidden = true
+        }else{
+            randomTextField.isHidden = false
+        }
+        
         motifyButton.setOnClickListener {
             loadingView?.startAnimating()
+            
             if(self.randomTextField.text! != nil && self.randomTextField.text! != "" && self.againPasswordTextField.text! != nil && self.againPasswordTextField.text! != "" && self.newPasswordTextField.text! != nil && self.newPasswordTextField.text! != ""){
                 if(self.againPasswordTextField.text == self.newPasswordTextField.text){
                     if(self.isClick){

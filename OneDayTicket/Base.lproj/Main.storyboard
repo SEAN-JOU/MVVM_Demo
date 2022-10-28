@@ -533,7 +533,7 @@
                         </tabBarAppearance>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="height">
-                                <real key="value" value="95"/>
+                                <real key="value" value="85"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                 <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -544,6 +544,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
+                        <outlet property="mainTabBar" destination="rGr-gJ-1XH" id="WlS-Lm-7t8"/>
                         <segue destination="qzv-Dm-8zy" kind="relationship" relationship="viewControllers" id="4i0-iL-31c"/>
                         <segue destination="6zs-Yy-Jts" kind="relationship" relationship="viewControllers" id="E7z-bL-77N"/>
                     </connections>
@@ -556,7 +557,7 @@
         <scene sceneID="NfI-7d-Ckb">
             <objects>
                 <navigationController storyboardIdentifier="HomeNavID" id="QCZ-e1-doW" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" largeTitles="YES" id="FHp-i4-BhI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" translucent="NO" largeTitles="YES" id="FHp-i4-BhI">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -585,11 +586,11 @@
             <objects>
                 <viewController storyboardIdentifier="WriteOffRecordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6zs-Yy-Jts" customClass="WriteOffRecordViewController" customModule="onedayticket_ios" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BB9-vg-jce">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg8-yG-hnL">
-                                <rect key="frame" x="324" y="723" width="60" height="60"/>
+                                <rect key="frame" x="324" y="583" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Yhy-xi-g6D"/>
@@ -633,11 +634,11 @@
             <objects>
                 <viewController storyboardIdentifier="PackageInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qzv-Dm-8zy" customClass="PackageInfoViewController" customModule="onedayticket_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkR-hF-nbb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P1-cl-6VW">
-                                <rect key="frame" x="324" y="723" width="60" height="60"/>
+                                <rect key="frame" x="324" y="583" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="GVw-tW-NzY"/>

@@ -1,10 +1,12 @@
 
 
 import UIKit
+import Kingfisher
 
 
 class MainViewController:UITabBarController, UINavigationControllerDelegate{
     
+    @IBOutlet weak var mainTabBar: CustomTabBar!
     var mainViewModel = MainViewModel()
     
     required init(coder aDecoder: NSCoder) {
@@ -17,10 +19,18 @@ class MainViewController:UITabBarController, UINavigationControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(UIScreen.main.nativeBounds.height > 1400){
+            mainTabBar.height = 100.0
+            Log.d(title: "aaaaa", message: "b1")
+        }else{
+            mainTabBar.height = 70.0
+            Log.d(title: "aaaaa", message: "b2")
+        }
+        
         mainViewModel.initViewModel(vc: self)
         mainViewModel.getdata(memberID: UserDefault.getValue(key: "memberID") as! String)
-//        navigationItem.leftBarButtonItems![0] = UIBarButtonItem.menuButton(self, action: #selector(moveToNotifyVC), imageName: "chevron_left")
-        navigationItem.title = Strings.login_title
+        self.navigationItem.rightBarButtonItems![0] = UIBarButtonItem.menuButton(self, action: #selector(self.moveToNotifyVC), imageName: "ic_notifications")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,19 +56,39 @@ class MainViewController:UITabBarController, UINavigationControllerDelegate{
             }
         }
     }
-    
-    @objc func moveToNotifyVC() {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "NotifyViewController")
-//        vc.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
-//        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-//        self.present(vc, animated: true, completion: nil)
-    }
 }
 
 
 extension MainViewController:MainDelegate {
     func getdataCallBack(mainData: MainDataType) {
+        DispatchQueue.main.async {
+            self.navigationItem.title = mainData.data.member_name.zh_TW
+            if(mainData.data.renew_password){
+                DispatchQueue.main.async {
+                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController
+                    vc1.modalPresentationStyle = .fullScreen
+                    vc1.isFirst = true
+                    self.present(vc1, animated: true, completion: nil)
+                }
+            }
+            if let imageURLString = mainData.data.logo_url {
+                if imageURLString == "" { return }
+                let imageURL = URL(string: imageURLString)!
+                let resource = ImageResource(downloadURL: imageURL)
+                KingfisherManager.shared.retrieveImage(with: resource, options: nil, progressBlock: nil) { result in
+                      switch result {
+                      case .success(let value):
+                          self.navigationItem.leftBarButtonItems![0] = UIBarButtonItem.menuButton1(self, action: #selector(self.moveToNotifyVC), image: value.image.resizeImage(targetSize: CGSize(width: 25, height: 25)).withRenderingMode(.alwaysTemplate))
+                          break
+                      case .failure(let error):
+                          break
+                      }
+                  }
+            }
+        }
+    }
+    
+    @objc func moveToNotifyVC() {
         
     }
 }
