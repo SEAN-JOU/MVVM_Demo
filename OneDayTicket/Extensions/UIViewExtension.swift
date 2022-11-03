@@ -141,8 +141,8 @@ extension UIView {
         let toastLb = UILabel()
         toastLb.numberOfLines = 0
         toastLb.lineBreakMode = .byWordWrapping
-        toastLb.backgroundColor = UIColor.white
-        toastLb.textColor = UIColor.black
+        toastLb.backgroundColor = UIColor.gray
+        toastLb.textColor = UIColor.white
         toastLb.layer.cornerRadius = 10.0
         toastLb.textAlignment = .center
         toastLb.font = UIFont.systemFont(ofSize: 15.0)

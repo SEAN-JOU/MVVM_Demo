@@ -16,7 +16,8 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
     var previewLayer: AVCaptureVideoPreviewLayer!
     var scannerViewModel = ScannerViewModel()
 
-
+    @IBOutlet weak var mainView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,9 +63,9 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
         }
 
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = CGRect(x: 0, y: 100, width: view.layer.bounds.width, height: view.layer.bounds.height-100)
+        previewLayer.frame = CGRect(x: 0, y: 0, width: view.layer.bounds.width, height: view.layer.bounds.height)
         previewLayer.videoGravity = .resizeAspectFill
-        view.layer.addSublayer(previewLayer)
+        self.mainView.layer.addSublayer(previewLayer)
 
         captureSession.startRunning()
     }
@@ -101,15 +102,21 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             found(code: stringValue)
         }
-//        captureSession.stopRunning()
 //        dismiss(animated: true)
     }
 
     func found(code: String) {
+//        DispatchQueue.main.async {
+//            self.view.showToast(text: code)
+//            self.scannerViewModel.getticketinfo(memberID: UserDefault.getValue(key: "memberID") as! String, qrcode_data: code, session: UserDefault.getValue(key: "session") as! String)
+//        }
         DispatchQueue.main.async {
-            self.view.showToast(text: code)
-            self.scannerViewModel.getticketinfo(memberID: UserDefault.getValue(key: "memberID") as! String, qrcode_data: code, session: UserDefault.getValue(key: "session") as! String)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "WriteOffViewController") as! WriteOffViewController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
         }
+        captureSession.stopRunning()
     }
 
     override var prefersStatusBarHidden: Bool {

@@ -9,9 +9,14 @@ import UIKit
 class WriteOffRecordViewController: UIViewController {
     
     @IBOutlet weak var qrcodeBtn: UIButton!
+
+    
+
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+     
         qrcodeBtn.setOnClickListener {
             DispatchQueue.main.async {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)

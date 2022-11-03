@@ -64,12 +64,12 @@ extension MainViewController:MainDelegate {
         DispatchQueue.main.async {
             self.navigationItem.title = mainData.data.member_name.zh_TW
             if(mainData.data.renew_password){
-                DispatchQueue.main.async {
-                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController
-                    vc1.modalPresentationStyle = .fullScreen
-                    vc1.isFirst = true
-                    self.present(vc1, animated: true, completion: nil)
-                }
+//                DispatchQueue.main.async {
+//                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController
+//                    vc1.modalPresentationStyle = .fullScreen
+//                    vc1.isFirst = true
+//                    self.present(vc1, animated: true, completion: nil)
+//                }
             }
             if let imageURLString = mainData.data.logo_url {
                 if imageURLString == "" { return }
@@ -78,7 +78,7 @@ extension MainViewController:MainDelegate {
                 KingfisherManager.shared.retrieveImage(with: resource, options: nil, progressBlock: nil) { result in
                       switch result {
                       case .success(let value):
-                          self.navigationItem.leftBarButtonItems![0] = UIBarButtonItem.menuButton1(self, action: #selector(self.moveToNotifyVC), image: value.image.resizeImage(targetSize: CGSize(width: 25, height: 25)).withRenderingMode(.alwaysTemplate))
+                          self.navigationItem.leftBarButtonItems![0] = UIBarButtonItem.menuButton1(self, action: #selector(self.moveToNotifyVC), image: value.image.resizeImage(targetSize: CGSize(width: 25, height: 25)).withRenderingMode(.alwaysOriginal))
                           break
                       case .failure(let error):
                           break

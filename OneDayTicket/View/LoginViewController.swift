@@ -22,8 +22,8 @@ class LoginViewController: BaseViewController{
         loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         versionLabel.text = "v " + appVersion!
-        
-        loginViewModel.getVersion()
+        loginButton.accessibilityIdentifier = "loginButton"
+//        loginViewModel.getVersion()
         
         if(UserDefault.getValue(key: "password") as? String != nil && UserDefault.getValue(key: "password") as? String != ""){
             rememberCheckBox.isChecked = true

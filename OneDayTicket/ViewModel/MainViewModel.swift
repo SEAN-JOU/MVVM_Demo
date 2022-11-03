@@ -19,6 +19,7 @@ class MainViewModel {
     func getdata(memberID:String){
             ApiClient.getdata(memberID: memberID, complete: { (data) in
                 let decoder = JSONDecoder()
+                Log.d(title: "aaaaaa", message: String(data: data!, encoding: .utf8))
                 do {
                     let mainData = try decoder.decode(MainDataType.self, from: data!)
                     if(mainData.sysCode != nil){

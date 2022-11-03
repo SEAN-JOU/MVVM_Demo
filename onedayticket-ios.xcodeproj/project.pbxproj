@@ -48,6 +48,9 @@
 		1479C0A028C7492C000BF2A3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C09F28C7492C000BF2A3 /* SplashViewController.swift */; };
 		1487B0E02907D4C50077FFDC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487B0DF2907D4C50077FFDC /* MenuViewController.swift */; };
 		14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14914EC728C9773400DBE6BC /* CheckBox.swift */; };
+		1498D37F291353F1001AEB18 /* XCUIApplication+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498D36B29135366001AEB18 /* XCUIApplication+Onboarding.swift */; };
+		1498D380291353F1001AEB18 /* OnboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498D36A29135366001AEB18 /* OnboardingUITests.swift */; };
+		1498D384291392EB001AEB18 /* WriteOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498D383291392EB001AEB18 /* WriteOffViewController.swift */; };
 		14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */; };
 		14B302C628EACEEC00C757C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B302C528EACEEC00C757C0 /* MainViewController.swift */; };
 		14D913F52908C1B70072F452 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D913F42908C1B70072F452 /* ScannerViewModel.swift */; };
@@ -63,6 +66,16 @@
 		14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294C28EAB8A200BA6375 /* UnicodeUtil.swift */; };
 		886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1498D37A291353E3001AEB18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1479C03828C6D33A000BF2A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1479C03F28C6D33A000BF2A3;
+			remoteInfo = "onedayticket-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1429550128FD021400C5EDEF /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
@@ -108,6 +121,11 @@
 		1479C09F28C7492C000BF2A3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		1487B0DF2907D4C50077FFDC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		14914EC728C9773400DBE6BC /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		1498D36A29135366001AEB18 /* OnboardingUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingUITests.swift; sourceTree = "<group>"; };
+		1498D36B29135366001AEB18 /* XCUIApplication+Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Onboarding.swift"; sourceTree = "<group>"; };
+		1498D36C29135366001AEB18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1498D374291353E3001AEB18 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1498D383291392EB001AEB18 /* WriteOffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteOffViewController.swift; sourceTree = "<group>"; };
 		14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDataType.swift; sourceTree = "<group>"; };
 		14B302C528EACEEC00C757C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14D913F42908C1B70072F452 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +150,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1498D371291353E3001AEB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +201,7 @@
 				1467E34128F9313500E1BA17 /* MotifyPasswordViewController.swift */,
 				147387F828FE3A7000429409 /* BaseViewController.swift */,
 				1487B0DF2907D4C50077FFDC /* MenuViewController.swift */,
+				1498D383291392EB001AEB18 /* WriteOffViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				1479C04228C6D33A000BF2A3 /* OneDayTicket */,
+				1498D375291353E3001AEB18 /* ExampleUITests */,
 				1479C04128C6D33A000BF2A3 /* Products */,
 				4498D2F0E847CD78D1FC69FF /* Pods */,
 				3EB2F15BD9F7B3BCECA28DC2 /* Frameworks */,
@@ -249,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */,
+				1498D374291353E3001AEB18 /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,6 +302,16 @@
 				1479C04C28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld */,
 			);
 			path = OneDayTicket;
+			sourceTree = "<group>";
+		};
+		1498D375291353E3001AEB18 /* ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1498D36C29135366001AEB18 /* Info.plist */,
+				1498D36A29135366001AEB18 /* OnboardingUITests.swift */,
+				1498D36B29135366001AEB18 /* XCUIApplication+Onboarding.swift */,
+			);
+			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
 		14EB294528EAB8A200BA6375 /* Utils */ = {
@@ -329,6 +367,24 @@
 			productReference = 1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1498D373291353E3001AEB18 /* ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1498D37C291353E3001AEB18 /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
+			buildPhases = (
+				1498D370291353E3001AEB18 /* Sources */,
+				1498D371291353E3001AEB18 /* Frameworks */,
+				1498D372291353E3001AEB18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1498D37B291353E3001AEB18 /* PBXTargetDependency */,
+			);
+			name = ExampleUITests;
+			productName = ExampleUITests;
+			productReference = 1498D374291353E3001AEB18 /* ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -341,6 +397,10 @@
 				TargetAttributes = {
 					1479C03F28C6D33A000BF2A3 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					1498D373291353E3001AEB18 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1479C03F28C6D33A000BF2A3;
 					};
 				};
 			};
@@ -359,6 +419,7 @@
 			projectRoot = "";
 			targets = (
 				1479C03F28C6D33A000BF2A3 /* onedayticket-ios */,
+				1498D373291353E3001AEB18 /* ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +434,13 @@
 				143ED24728EA6D81008C1C65 /* Localizable.strings in Resources */,
 				1479C05028C6D33A000BF2A3 /* Assets.xcassets in Resources */,
 				1479C04B28C6D33A000BF2A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1498D372291353E3001AEB18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +505,7 @@
 				14D913F52908C1B70072F452 /* ScannerViewModel.swift in Sources */,
 				147387FB28FE700400429409 /* MotifyPasswordViewModel.swift in Sources */,
 				1479C04E28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld in Sources */,
+				1498D384291392EB001AEB18 /* WriteOffViewController.swift in Sources */,
 				143ED24D28EA85F6008C1C65 /* LoginViewModel.swift in Sources */,
 				147387F928FE3A7000429409 /* BaseViewController.swift in Sources */,
 				143ED23C28EA6C99008C1C65 /* Double+Ext.swift in Sources */,
@@ -477,7 +546,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1498D370291353E3001AEB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1498D37F291353F1001AEB18 /* XCUIApplication+Onboarding.swift in Sources */,
+				1498D380291353F1001AEB18 /* OnboardingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1498D37B291353E3001AEB18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1479C03F28C6D33A000BF2A3 /* onedayticket-ios */;
+			targetProxy = 1498D37A291353E3001AEB18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		143ED24128EA6D81008C1C65 /* Localizable.strings */ = {
@@ -695,6 +781,40 @@
 			};
 			name = Release;
 		};
+		1498D37D291353E3001AEB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V8G7US8XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwiseinc.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "onedayticket-ios";
+			};
+			name = Debug;
+		};
+		1498D37E291353E3001AEB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V8G7US8XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jwiseinc.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "onedayticket-ios";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -712,6 +832,15 @@
 			buildConfigurations = (
 				1479C05828C6D33A000BF2A3 /* Debug */,
 				1479C05928C6D33A000BF2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1498D37C291353E3001AEB18 /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1498D37D291353E3001AEB18 /* Debug */,
+				1498D37E291353E3001AEB18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
