@@ -78,7 +78,15 @@ extension MainViewController:MainDelegate {
                 KingfisherManager.shared.retrieveImage(with: resource, options: nil, progressBlock: nil) { result in
                       switch result {
                       case .success(let value):
-                          self.navigationItem.leftBarButtonItems![0] = UIBarButtonItem.menuButton1(self, action: #selector(self.moveToNotifyVC), image: value.image.resizeImage(targetSize: CGSize(width: 25, height: 25)).withRenderingMode(.alwaysOriginal))
+                          let button = UIButton()
+                          button.imageView?.contentMode = .scaleAspectFill
+                          button.imageView?.layer.cornerRadius = 14
+                          button.translatesAutoresizingMaskIntoConstraints = false
+                          button.setImage(value.image.resizeImage(targetSize: CGSize(width: 25, height: 25)).withRenderingMode(.alwaysOriginal), for: .normal)
+                          button.widthAnchor.constraint(equalToConstant: 28).isActive = true
+                          button.heightAnchor.constraint(equalToConstant: 28).isActive = true
+//                          button.addTarget(self, action: #selector(buttonTap), for: .touchUpInside)
+                          self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
                           break
                       case .failure(let error):
                           break
@@ -87,7 +95,6 @@ extension MainViewController:MainDelegate {
             }
         }
     }
-    
     @objc func moveToNotifyVC() {
         
     }

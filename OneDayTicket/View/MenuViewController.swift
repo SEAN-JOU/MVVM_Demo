@@ -41,6 +41,7 @@ class MenuViewController: UIViewController {
         }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: storyboardId) as! T
+        vc.modalPresentationStyle = .fullScreen
         vc.view.tag = 99
         view.insertSubview(vc.view, at: self.revealSideMenuOnTop ? 0 : 1)
         addChild(vc)

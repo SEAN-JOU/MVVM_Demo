@@ -53,6 +53,8 @@
 		1498D384291392EB001AEB18 /* WriteOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498D383291392EB001AEB18 /* WriteOffViewController.swift */; };
 		14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */; };
 		14B302C628EACEEC00C757C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B302C528EACEEC00C757C0 /* MainViewController.swift */; };
+		14CD84E8291A0419001B15FC /* RTCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD84E6291A0419001B15FC /* RTCustomAlert.swift */; };
+		14CD84E9291A0419001B15FC /* RTCustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CD84E7291A0419001B15FC /* RTCustomAlert.xib */; };
 		14D913F52908C1B70072F452 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D913F42908C1B70072F452 /* ScannerViewModel.swift */; };
 		14D913F72908C1C90072F452 /* ScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D913F62908C1C90072F452 /* ScannerDelegate.swift */; };
 		14D913F92908C2170072F452 /* ScannerDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D913F82908C2170072F452 /* ScannerDataType.swift */; };
@@ -128,6 +130,8 @@
 		1498D383291392EB001AEB18 /* WriteOffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteOffViewController.swift; sourceTree = "<group>"; };
 		14A6B41D28EC1D9C0087A73D /* ScanDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDataType.swift; sourceTree = "<group>"; };
 		14B302C528EACEEC00C757C0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		14CD84E6291A0419001B15FC /* RTCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCustomAlert.swift; sourceTree = "<group>"; };
+		14CD84E7291A0419001B15FC /* RTCustomAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTCustomAlert.xib; sourceTree = "<group>"; };
 		14D913F42908C1B70072F452 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 		14D913F62908C1C90072F452 /* ScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDelegate.swift; sourceTree = "<group>"; };
 		14D913F82908C2170072F452 /* ScannerDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDataType.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 		1479C04228C6D33A000BF2A3 /* OneDayTicket */ = {
 			isa = PBXGroup;
 			children = (
+				14CD84E5291A0419001B15FC /* RTCustomAlert */,
 				14EB294528EAB8A200BA6375 /* Utils */,
 				143ED23228EA6C8B008C1C65 /* Extensions */,
 				143ED23128EA6C6B008C1C65 /* Model */,
@@ -312,6 +317,15 @@
 				1498D36B29135366001AEB18 /* XCUIApplication+Onboarding.swift */,
 			);
 			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
+		14CD84E5291A0419001B15FC /* RTCustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				14CD84E6291A0419001B15FC /* RTCustomAlert.swift */,
+				14CD84E7291A0419001B15FC /* RTCustomAlert.xib */,
+			);
+			path = RTCustomAlert;
 			sourceTree = "<group>";
 		};
 		14EB294528EAB8A200BA6375 /* Utils */ = {
@@ -434,6 +448,7 @@
 				143ED24728EA6D81008C1C65 /* Localizable.strings in Resources */,
 				1479C05028C6D33A000BF2A3 /* Assets.xcassets in Resources */,
 				1479C04B28C6D33A000BF2A3 /* Main.storyboard in Resources */,
+				14CD84E9291A0419001B15FC /* RTCustomAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +526,7 @@
 				143ED23C28EA6C99008C1C65 /* Double+Ext.swift in Sources */,
 				14914EC828C9773400DBE6BC /* CheckBox.swift in Sources */,
 				14EB295028EAB8A200BA6375 /* ClosureSleeve.swift in Sources */,
+				14CD84E8291A0419001B15FC /* RTCustomAlert.swift in Sources */,
 				145084A628F79D76004EF237 /* WriteOffRecordViewController.swift in Sources */,
 				1429550428FD024E00C5EDEF /* ForgetPasswordDelegate.swift in Sources */,
 				14EB294428EAB04700BA6375 /* LoginDataType.swift in Sources */,
@@ -651,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -705,7 +721,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

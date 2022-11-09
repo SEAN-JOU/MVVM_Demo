@@ -48,6 +48,7 @@ class LoginViewController: BaseViewController{
     }
     
     @objc private func loginTapped() {
+        loginButton.isEnabled = false
         if(memberIDTextField.text! != nil && memberIDTextField.text! != "" && passwordTextField.text! != nil && passwordTextField.text! != ""){
             loadingView?.startAnimating()
             loginViewModel.login(memberID: memberIDTextField.text!, password: passwordTextField.text!)
@@ -57,6 +58,9 @@ class LoginViewController: BaseViewController{
             }
         }else{
             UIAlertController.showOkAlertBox(title:"輸入框不得為空",vc: self)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [self] in
+            loginButton.isEnabled = true
         }
     }
 }

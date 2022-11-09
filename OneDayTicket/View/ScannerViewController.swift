@@ -10,7 +10,6 @@ import UIKit
 
 class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsDelegate {
     
-    
     @IBOutlet weak var backButton: UIButton!
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
