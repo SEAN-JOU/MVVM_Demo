@@ -1,9 +1,4 @@
-//
-//  Dictionary+Ex.swift
-//  onedayticket-ios
-//
-//  Created by Sean on 2022/10/3.
-//
+
 
 import Foundation
 
@@ -35,4 +30,8 @@ extension Data {
             append(data)
         }
     }
+    
+    var hexDescription: String {
+            return reduce("") {$0 + String(format: " "+"%02x", $1)}
+        }
 }

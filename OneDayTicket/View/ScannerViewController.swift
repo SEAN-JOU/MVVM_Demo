@@ -21,7 +21,6 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
         super.viewDidLoad()
         
         scannerViewModel.initViewModel(vc: self)
-
         backButton.setOnClickListener {
             DispatchQueue.main.async {
                 let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
@@ -29,10 +28,8 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
                 self.present(vc1, animated: true, completion: nil)
             }
         }
-
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
-
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
         let videoInput: AVCaptureDeviceInput
 
@@ -60,13 +57,10 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
             failed()
             return
         }
-
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = CGRect(x: 0, y: 0, width: view.layer.bounds.width, height: view.layer.bounds.height)
         previewLayer.videoGravity = .resizeAspectFill
         self.mainView.layer.addSublayer(previewLayer)
-
-        captureSession.startRunning()
     }
 
     func failed() {
@@ -76,16 +70,15 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
         captureSession = nil
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         if (captureSession?.isRunning == false) {
             captureSession.startRunning()
         }
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
 
         if (captureSession?.isRunning == true) {
             captureSession.stopRunning()
@@ -101,10 +94,13 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             found(code: stringValue)
         }
-//        dismiss(animated: true)
     }
 
     func found(code: String) {
+
+//        Log.d(title: "aaaaaaaaa", message: code.base64Decoded().toHexEncodedString(uppercase: false, prefix: "", separator: " "))
+        Log.d(title: "aaaaaaaaa", message: Data(base64Encoded: code)?.hexDescription)
+
 //        DispatchQueue.main.async {
 //            self.view.showToast(text: code)
 //            self.scannerViewModel.getticketinfo(memberID: UserDefault.getValue(key: "memberID") as! String, qrcode_data: code, session: UserDefault.getValue(key: "session") as! String)

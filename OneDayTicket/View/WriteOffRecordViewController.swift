@@ -10,13 +10,8 @@ class WriteOffRecordViewController: UIViewController {
     
     @IBOutlet weak var qrcodeBtn: UIButton!
 
-    
-
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         qrcodeBtn.setOnClickListener {
             OperationQueue.main.addOperation {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -25,5 +20,10 @@ class WriteOffRecordViewController: UIViewController {
                 self.present(vc, animated: true, completion: nil)
             }
         }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+     
     }
 }
