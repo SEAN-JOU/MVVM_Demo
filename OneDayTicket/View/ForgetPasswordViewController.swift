@@ -27,6 +27,7 @@ class ForgetPasswordViewController: BaseViewController {
         backButton.setOnClickListener {
             self.dismiss(animated: true)
         }
+        
         sendBtn.setOnClickListener {
             loadingView?.startAnimating()
             if(self.memberIDTextField.text! != nil && self.memberIDTextField.text! != "" && self.emailTextField.text! != nil && self.emailTextField.text! != ""){
@@ -88,7 +89,6 @@ extension ForgetPasswordViewController:ForgetPasswordDelegate {
 }
 
 extension ForgetPasswordViewController:UITextFieldDelegate {
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

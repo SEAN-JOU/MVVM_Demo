@@ -28,6 +28,7 @@ class MainViewController:UITabBarController, UINavigationControllerDelegate{
             Log.d(title: "aaaaa", message: "b2")
         }
         
+        self.view.backgroundColor = UIColor.white
         mainViewModel.initViewModel(vc: self)
         mainViewModel.getdata(memberID: UserDefault.getValue(key: "memberID") as! String)
         self.navigationItem.rightBarButtonItems![0] = UIBarButtonItem.menuButton(self, action: #selector(self.moveToNotifyVC), imageName: "ic_notifications")
@@ -56,13 +57,17 @@ class MainViewController:UITabBarController, UINavigationControllerDelegate{
             }
         }
     }
+    
+    @objc func moveToNotifyVC() {
+        
+    }
 }
 
 
 extension MainViewController:MainDelegate {
     func getdataCallBack(mainData: MainDataType) {
         DispatchQueue.main.async {
-            self.navigationItem.title = mainData.data.member_name.zh_TW
+            UserDefault.setValue(key: "MemberName", value: mainData.data.member_name.zh_TW)
             if(mainData.data.renew_password){
 //                DispatchQueue.main.async {
 //                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController
@@ -95,9 +100,7 @@ extension MainViewController:MainDelegate {
             }
         }
     }
-    @objc func moveToNotifyVC() {
-        
-    }
+
 }
 
 

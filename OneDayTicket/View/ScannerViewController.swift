@@ -14,7 +14,7 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var scannerViewModel = ScannerViewModel()
-
+    @IBOutlet weak var inputButton: UIButton!
     @IBOutlet weak var mainView: UIView!
     
     override func viewDidLoad() {
@@ -27,6 +27,23 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
                 vc1.modalPresentationStyle = .fullScreen
                 self.present(vc1, animated: true, completion: nil)
             }
+        }
+        inputButton.setOnClickListener {
+            self.captureSession.stopRunning()
+            let alert = UIAlertController(title: "手動輸入核銷碼", message: "", preferredStyle: .alert)
+            alert.addTextField { (textField) in
+                textField.text = ""
+            }
+            alert.addAction(UIAlertAction(title: "確定", style: .default, handler: { [weak alert] (_) in
+                let textField = alert?.textFields![0]
+                print("Text field: \(textField!.text)")
+            }))
+            alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { [weak alert] (_) in
+                self.captureSession.startRunning()
+                let textField = alert?.textFields![0]
+                print("Text field: \(textField!.text)")
+            }))
+            self.present(alert, animated: true, completion: nil)
         }
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
@@ -97,7 +114,6 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
     }
 
     func found(code: String) {
-
 //        Log.d(title: "aaaaaaaaa", message: code.base64Decoded().toHexEncodedString(uppercase: false, prefix: "", separator: " "))
         Log.d(title: "aaaaaaaaa", message: Data(base64Encoded: code)?.hexDescription)
 

@@ -9,12 +9,10 @@ import UIKit
 class PackageInfoViewController: BaseViewController {
     
     @IBOutlet weak var qrcodeBtn: UIButton!
-    @IBOutlet weak var account_name: UILabel!
+//    @IBOutlet weak var account_name: UILabel!
     private let dotImage = UIImage(named: "ic_action_graydot")
     private let dotSelectImage = UIImage(named: "ic_action_whitedot")
     @IBOutlet weak var titleScrollView: UIView!
-    var packageInfoViewModel = PackageInfoViewModel()
-
     
     
     private lazy var autoScrollView1: LTAutoScrollView = {
@@ -47,7 +45,7 @@ class PackageInfoViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        account_name.text = "Hi 王大明"
+//        account_name.text = "Hi 王大明"
         titleScrollView.backgroundColor = UIColor.white
         autoScrollView1.backgroundColor = UIColor.white
         titleScrollView.addSubview(autoScrollView1)
@@ -138,8 +136,3 @@ class PackageInfoViewController: BaseViewController {
     }
 }
 
-extension PackageInfoViewController:PackageInfoDelegate{
-    func getticketinfo(packageInfoData: PackageInfoDataType) {
-        
-    }
-}

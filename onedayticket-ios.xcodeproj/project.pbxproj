@@ -38,11 +38,6 @@
 		147387FB28FE700400429409 /* MotifyPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FA28FE700400429409 /* MotifyPasswordViewModel.swift */; };
 		147387FD28FE701100429409 /* MotifyPasswordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FC28FE701100429409 /* MotifyPasswordDelegate.swift */; };
 		147387FF28FE90A900429409 /* MotifyPasswordDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */; };
-		147626CD2921D7DE004E7687 /* PackageInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147626CC2921D7DE004E7687 /* PackageInfoViewModel.swift */; };
-		147626CF2921D85C004E7687 /* PackageInfoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147626CE2921D85C004E7687 /* PackageInfoDelegate.swift */; };
-		147626D12921DAB0004E7687 /* PackageInfoDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147626D02921DAB0004E7687 /* PackageInfoDataType.swift */; };
-		147626D329222C1B004E7687 /* WriteOffRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147626D229222C1B004E7687 /* WriteOffRecordViewModel.swift */; };
-		147626D529222C2A004E7687 /* WriteOffRecordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147626D429222C2A004E7687 /* WriteOffRecordDelegate.swift */; };
 		1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04328C6D33A000BF2A3 /* AppDelegate.swift */; };
 		1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */; };
 		1479C04828C6D33A000BF2A3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479C04728C6D33A000BF2A3 /* ScannerViewController.swift */; };
@@ -71,6 +66,7 @@
 		14EB295128EAB8A200BA6375 /* LTFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294A28EAB8A200BA6375 /* LTFlowLayout.swift */; };
 		14EB295228EAB8A200BA6375 /* ExampleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294B28EAB8A200BA6375 /* ExampleUtil.swift */; };
 		14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294C28EAB8A200BA6375 /* UnicodeUtil.swift */; };
+		14FBFC632924BF2F007A0EB4 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBFC622924BF2F007A0EB4 /* RecordCell.swift */; };
 		886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,11 +112,6 @@
 		147387FA28FE700400429409 /* MotifyPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordViewModel.swift; sourceTree = "<group>"; };
 		147387FC28FE701100429409 /* MotifyPasswordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordDelegate.swift; sourceTree = "<group>"; };
 		147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifyPasswordDataType.swift; sourceTree = "<group>"; };
-		147626CC2921D7DE004E7687 /* PackageInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfoViewModel.swift; sourceTree = "<group>"; };
-		147626CE2921D85C004E7687 /* PackageInfoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfoDelegate.swift; sourceTree = "<group>"; };
-		147626D02921DAB0004E7687 /* PackageInfoDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInfoDataType.swift; sourceTree = "<group>"; };
-		147626D229222C1B004E7687 /* WriteOffRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteOffRecordViewModel.swift; sourceTree = "<group>"; };
-		147626D429222C2A004E7687 /* WriteOffRecordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteOffRecordDelegate.swift; sourceTree = "<group>"; };
 		1479C04028C6D33A000BF2A3 /* onedayticket-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "onedayticket-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479C04328C6D33A000BF2A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +144,7 @@
 		14EB294A28EAB8A200BA6375 /* LTFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTFlowLayout.swift; sourceTree = "<group>"; };
 		14EB294B28EAB8A200BA6375 /* ExampleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleUtil.swift; sourceTree = "<group>"; };
 		14EB294C28EAB8A200BA6375 /* UnicodeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeUtil.swift; sourceTree = "<group>"; };
+		14FBFC622924BF2F007A0EB4 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.release.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.release.xcconfig"; sourceTree = "<group>"; };
 		539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.debug.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onedayticket_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14280EF2292B7A2200B8B378 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				14914EC728C9773400DBE6BC /* CheckBox.swift */,
+				145084AB28F7EB5B004EF237 /* CustomTabBar.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
 		143ED22E28EA6C2E008C1C65 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,10 +191,6 @@
 				147387FC28FE701100429409 /* MotifyPasswordDelegate.swift */,
 				14D913F42908C1B70072F452 /* ScannerViewModel.swift */,
 				14D913F62908C1C90072F452 /* ScannerDelegate.swift */,
-				147626CC2921D7DE004E7687 /* PackageInfoViewModel.swift */,
-				147626CE2921D85C004E7687 /* PackageInfoDelegate.swift */,
-				147626D229222C1B004E7687 /* WriteOffRecordViewModel.swift */,
-				147626D429222C2A004E7687 /* WriteOffRecordDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -234,7 +231,6 @@
 				147387FE28FE90A900429409 /* MotifyPasswordDataType.swift */,
 				1446158C290786C100A6A857 /* VersionDataType.swift */,
 				14D913F82908C2170072F452 /* ScannerDataType.swift */,
-				147626D02921DAB0004E7687 /* PackageInfoDataType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +299,8 @@
 		1479C04228C6D33A000BF2A3 /* OneDayTicket */ = {
 			isa = PBXGroup;
 			children = (
+				14280EF2292B7A2200B8B378 /* Element */,
+				14FBFC612924BEEC007A0EB4 /* Cells */,
 				14CD84E5291A0419001B15FC /* RTCustomAlert */,
 				14EB294528EAB8A200BA6375 /* Utils */,
 				143ED23228EA6C8B008C1C65 /* Extensions */,
@@ -311,8 +309,6 @@
 				143ED22F28EA6C53008C1C65 /* Network */,
 				143ED22E28EA6C2E008C1C65 /* ViewModel */,
 				143ED23F28EA6D43008C1C65 /* Language */,
-				14914EC728C9773400DBE6BC /* CheckBox.swift */,
-				145084AB28F7EB5B004EF237 /* CustomTabBar.swift */,
 				1479C04328C6D33A000BF2A3 /* AppDelegate.swift */,
 				1479C04528C6D33A000BF2A3 /* SceneDelegate.swift */,
 				1479C04928C6D33A000BF2A3 /* Main.storyboard */,
@@ -355,6 +351,14 @@
 				14EB294C28EAB8A200BA6375 /* UnicodeUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		14FBFC612924BEEC007A0EB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				14FBFC622924BF2F007A0EB4 /* RecordCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3EB2F15BD9F7B3BCECA28DC2 /* Frameworks */ = {
@@ -536,8 +540,6 @@
 				147387FB28FE700400429409 /* MotifyPasswordViewModel.swift in Sources */,
 				1479C04E28C6D33A000BF2A3 /* OneDayTicket.xcdatamodeld in Sources */,
 				1498D384291392EB001AEB18 /* WriteOffViewController.swift in Sources */,
-				147626CF2921D85C004E7687 /* PackageInfoDelegate.swift in Sources */,
-				147626CD2921D7DE004E7687 /* PackageInfoViewModel.swift in Sources */,
 				143ED24D28EA85F6008C1C65 /* LoginViewModel.swift in Sources */,
 				147387F928FE3A7000429409 /* BaseViewController.swift in Sources */,
 				143ED23C28EA6C99008C1C65 /* Double+Ext.swift in Sources */,
@@ -559,10 +561,7 @@
 				145684E528F6B4C200A9D1D4 /* ForgetPasswordViewController.swift in Sources */,
 				147387FF28FE90A900429409 /* MotifyPasswordDataType.swift in Sources */,
 				1479C04428C6D33A000BF2A3 /* AppDelegate.swift in Sources */,
-				147626D12921DAB0004E7687 /* PackageInfoDataType.swift in Sources */,
-				147626D329222C1B004E7687 /* WriteOffRecordViewModel.swift in Sources */,
 				14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */,
-				147626D529222C2A004E7687 /* WriteOffRecordDelegate.swift in Sources */,
 				147387FD28FE701100429409 /* MotifyPasswordDelegate.swift in Sources */,
 				1429550228FD021400C5EDEF /* ForgetPasswordViewModel.swift in Sources */,
 				1479C04628C6D33A000BF2A3 /* SceneDelegate.swift in Sources */,
@@ -572,6 +571,7 @@
 				14EB295128EAB8A200BA6375 /* LTFlowLayout.swift in Sources */,
 				143ED23D28EA6C99008C1C65 /* UIDatePicker+Ext.swift in Sources */,
 				14A6B41E28EC1D9C0087A73D /* ScanDataType.swift in Sources */,
+				14FBFC632924BF2F007A0EB4 /* RecordCell.swift in Sources */,
 				145084A828F7A13C004EF237 /* UIImage+Ex.swift in Sources */,
 				1467E34028F9000D00E1BA17 /* MainDelegate.swift in Sources */,
 				1429550628FD027400C5EDEF /* ForgetPasswordDataType.swift in Sources */,
@@ -768,9 +768,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -801,9 +800,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

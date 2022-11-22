@@ -54,7 +54,6 @@ public struct ApiClient {
         task.resume()
     }
     
-    
     static func getVersion(complete: @escaping (_ data: Data? )->() ){
         let url = URL(string: API_URL + "/merchant/getversion.php")!
         var request = URLRequest(url: url)
@@ -74,7 +73,6 @@ public struct ApiClient {
             }
         task.resume()
     }
-    
     
     static func forget(memberID:String,email:String,complete: @escaping (_ data: Data? )->() ){
         let url = URL(string: API_URL + "/merchant/forget.php")!
@@ -97,7 +95,6 @@ public struct ApiClient {
         }
         task.resume()
     }
-    
     
     static func resetPassword(authcode:String,newPassword:String,randNumber:String,complete: @escaping (_ data: Data? )->() ){
         let url = URL(string: API_URL + "/merchant/reset_passwd.php")!

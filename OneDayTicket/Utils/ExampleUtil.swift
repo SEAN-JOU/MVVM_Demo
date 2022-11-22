@@ -61,7 +61,6 @@ private func randomNonceString(length: Int = 32) -> String {
             }
         }
     }
-    
     return result
 }
 
@@ -77,8 +76,6 @@ private func sha256(_ input: String) -> String {
     } else {
         // Fallback on earlier versions
     }
-    
-    
     return hashString
 }
 

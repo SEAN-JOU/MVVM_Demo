@@ -15,6 +15,7 @@ class WriteOffViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         customAlert.alertTitle = "核銷成功"
         customAlert.alertTag = 1
         customAlert.statusImage = UIImage.init(named: "open")
