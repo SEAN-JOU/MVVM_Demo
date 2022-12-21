@@ -67,7 +67,7 @@ class MainViewController:UITabBarController, UINavigationControllerDelegate{
 extension MainViewController:MainDelegate {
     func getdataCallBack(mainData: MainDataType) {
         DispatchQueue.main.async {
-            UserDefault.setValue(key: "MemberName", value: mainData.data.member_name.zh_TW)
+            UserDefault.setValue(key: "MemberName", value: mainData.data.member_name?.zh_TW)
             if(mainData.data.renew_password){
 //                DispatchQueue.main.async {
 //                    let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MotifyPasswordViewController") as! MotifyPasswordViewController

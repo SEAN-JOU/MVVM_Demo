@@ -16,7 +16,8 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
     var scannerViewModel = ScannerViewModel()
     @IBOutlet weak var inputButton: UIButton!
     @IBOutlet weak var mainView: UIView!
-    
+    var isAlertOpen:Bool = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,17 +30,18 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
             }
         }
         inputButton.setOnClickListener {
-            self.captureSession.stopRunning()
+            self.isAlertOpen = false
             let alert = UIAlertController(title: "手動輸入核銷碼", message: "", preferredStyle: .alert)
             alert.addTextField { (textField) in
                 textField.text = ""
             }
             alert.addAction(UIAlertAction(title: "確定", style: .default, handler: { [weak alert] (_) in
+                self.isAlertOpen = true
                 let textField = alert?.textFields![0]
                 print("Text field: \(textField!.text)")
             }))
             alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: { [weak alert] (_) in
-                self.captureSession.startRunning()
+                self.isAlertOpen = true
                 let textField = alert?.textFields![0]
                 print("Text field: \(textField!.text)")
             }))
@@ -121,13 +123,15 @@ class ScannerViewController: BaseViewController, AVCaptureMetadataOutputObjectsD
 //            self.view.showToast(text: code)
 //            self.scannerViewModel.getticketinfo(memberID: UserDefault.getValue(key: "memberID") as! String, qrcode_data: code, session: UserDefault.getValue(key: "session") as! String)
 //        }
-        DispatchQueue.main.async {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "WriteOffViewController") as! WriteOffViewController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
+        if(isAlertOpen){
+            DispatchQueue.main.async {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "WriteOffViewController") as! WriteOffViewController
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
+            }
+            captureSession.stopRunning()
         }
-        captureSession.stopRunning()
     }
 
     override var prefersStatusBarHidden: Bool {
