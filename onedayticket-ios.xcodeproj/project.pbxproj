@@ -67,7 +67,7 @@
 		14EB295228EAB8A200BA6375 /* ExampleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294B28EAB8A200BA6375 /* ExampleUtil.swift */; };
 		14EB295328EAB8A200BA6375 /* UnicodeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EB294C28EAB8A200BA6375 /* UnicodeUtil.swift */; };
 		14FBFC632924BF2F007A0EB4 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FBFC622924BF2F007A0EB4 /* RecordCell.swift */; };
-		886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */; };
+		898EC11B9B1F7BC0DBD5606F /* Pods_onedayticket_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500220AD6B340BA1CD17C15F /* Pods_onedayticket_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,9 +145,9 @@
 		14EB294B28EAB8A200BA6375 /* ExampleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleUtil.swift; sourceTree = "<group>"; };
 		14EB294C28EAB8A200BA6375 /* UnicodeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeUtil.swift; sourceTree = "<group>"; };
 		14FBFC622924BF2F007A0EB4 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
-		47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.release.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.release.xcconfig"; sourceTree = "<group>"; };
-		539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.debug.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onedayticket_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500220AD6B340BA1CD17C15F /* Pods_onedayticket_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onedayticket_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7893BF3F07BB28F1BC35A028 /* Pods-onedayticket-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.debug.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		B24B3D90D975890AF008D3D0 /* Pods-onedayticket-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onedayticket-ios.release.xcconfig"; path = "Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886FAF4D19312430D7F83E5E /* Pods_onedayticket_ios.framework in Frameworks */,
+				898EC11B9B1F7BC0DBD5606F /* Pods_onedayticket_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +283,7 @@
 				1498D375291353E3001AEB18 /* ExampleUITests */,
 				1479C04128C6D33A000BF2A3 /* Products */,
 				4498D2F0E847CD78D1FC69FF /* Pods */,
-				3EB2F15BD9F7B3BCECA28DC2 /* Frameworks */,
+				68834BD3D0B1A3D75291DD84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -361,21 +361,21 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		3EB2F15BD9F7B3BCECA28DC2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				752708CF80AD2921675884DC /* Pods_onedayticket_ios.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4498D2F0E847CD78D1FC69FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */,
-				47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */,
+				7893BF3F07BB28F1BC35A028 /* Pods-onedayticket-ios.debug.xcconfig */,
+				B24B3D90D975890AF008D3D0 /* Pods-onedayticket-ios.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		68834BD3D0B1A3D75291DD84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500220AD6B340BA1CD17C15F /* Pods_onedayticket_ios.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,11 +385,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1479C05728C6D33A000BF2A3 /* Build configuration list for PBXNativeTarget "onedayticket-ios" */;
 			buildPhases = (
-				92BA6CACFE92F51C94B36931 /* [CP] Check Pods Manifest.lock */,
+				E33933C1395429137FDEB5F5 /* [CP] Check Pods Manifest.lock */,
 				1479C03C28C6D33A000BF2A3 /* Sources */,
 				1479C03D28C6D33A000BF2A3 /* Frameworks */,
 				1479C03E28C6D33A000BF2A3 /* Resources */,
-				8A6C0C8216D722AED0183A70 /* [CP] Embed Pods Frameworks */,
+				591C0A3EA42072A9738EAE76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -481,7 +481,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A6C0C8216D722AED0183A70 /* [CP] Embed Pods Frameworks */ = {
+		591C0A3EA42072A9738EAE76 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,7 +498,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-onedayticket-ios/Pods-onedayticket-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92BA6CACFE92F51C94B36931 /* [CP] Check Pods Manifest.lock */ = {
+		E33933C1395429137FDEB5F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -753,14 +753,14 @@
 		};
 		1479C05828C6D33A000BF2A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 539FBD5459D5803D59BCA3AC /* Pods-onedayticket-ios.debug.xcconfig */;
+			baseConfigurationReference = 7893BF3F07BB28F1BC35A028 /* Pods-onedayticket-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 8V8G7US8XU;
+				DEVELOPMENT_TEAM = 3WXM8F9ZYK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Oride套票管理平台";
@@ -785,14 +785,14 @@
 		};
 		1479C05928C6D33A000BF2A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47244CEB819E996AE678537E /* Pods-onedayticket-ios.release.xcconfig */;
+			baseConfigurationReference = B24B3D90D975890AF008D3D0 /* Pods-onedayticket-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 8V8G7US8XU;
+				DEVELOPMENT_TEAM = 3WXM8F9ZYK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneDayTicket/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Oride套票管理平台";
